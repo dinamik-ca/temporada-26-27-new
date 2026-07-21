@@ -1,0 +1,4 @@
+.DS_Store
+# Fitxers temporals de previsualització i còpies de seguretat del build
+_preview*.html
+build/_*

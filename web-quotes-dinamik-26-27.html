@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<title>Programes i quotes · Dinami-K · 2026/27</title>
+<meta name="description" content="Els tres programes de l'Escola d'Atletisme Dinami-K (Vilanova i la Geltrú) i les seves quotes, explicats amb claredat per a la temporada 2026/27: escola, tecnificació i alt rendiment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&family=Oswald:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#89CD24;--green-d:#4D7515;--green-ink:#3C5A12;
+    --black:#0A0A0A;--ink:#1c1c1c;--paper:#F4F4F0;--paper-2:#EAEAE4;
+    --grey:#6A6A6A;--grey-2:#9A9A96;--line:#dcdcd6;
+    --amber:#B8860B;--amber-bg:#F6ECCF;--green-bg:#EAF4D6;
+    --f-display:"Saira Condensed","Arial Narrow",sans-serif;
+    --f-meta:"Oswald",sans-serif;
+    --f-body:"Manrope",system-ui,sans-serif;
+    --wrap:820px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+  body{
+    margin:0;font-family:var(--f-body);color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Fluid typography ---------- */
+  h1,h2,h3{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.005em;color:var(--black);margin:0;}
+  h1{font-size:clamp(40px,10.5vw,64px);line-height:.9;}
+  h2{font-size:clamp(25px,6.4vw,34px);margin-top:44px;padding-top:18px;border-top:3px solid var(--black);}
+  h2 .n{color:transparent;-webkit-text-stroke:1.5px var(--green);margin-right:10px;}
+  h3{font-size:clamp(18px,4.6vw,21px);margin-top:22px;color:var(--green-ink);}
+  p{font-size:clamp(15px,4vw,16px);line-height:1.62;margin:12px 0;}
+  .lead{font-size:clamp(16.5px,4.6vw,18.5px);line-height:1.55;color:#2c2c2c;}
+  strong{color:var(--black);font-weight:700;}
+  ul,ol{margin:10px 0;padding-left:22px;}
+  li{font-size:clamp(14.5px,3.9vw,15.5px);line-height:1.55;margin:7px 0;}
+  a{color:var(--green-d);}
+  img{max-width:100%;}
+
+  .meta{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:var(--grey);margin:0;line-height:1.55;}
+  .footnote{font-family:var(--f-body);font-style:italic;font-size:13.5px;line-height:1.55;color:var(--grey);border-left:3px solid var(--green);padding-left:14px;margin:18px 0 0;}
+  .footnote strong{color:var(--ink);font-style:normal;font-weight:700;}
+  .kicker{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.28em;font-size:12px;color:var(--green-d);font-weight:600;margin:0;}
+
+  /* ---------- Layout shell ---------- */
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px 64px;}
+  .topbar{
+    background:var(--black);color:#fff;
+    position:sticky;top:0;z-index:20;
+  }
+  .topbar .inner{max-width:var(--wrap);margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .topbar img{height:26px;width:auto;display:block;}
+  .topbar span{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--grey-2);text-align:right;}
+
+  /* ---------- Cover ---------- */
+  .cover{padding:36px 0 26px;border-bottom:3px solid var(--green);margin-bottom:8px;}
+  .cover .bar{width:90px;height:6px;background:var(--green);margin:20px 0 16px;}
+  .cover h1{margin-top:6px;}
+  .cover .sub{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:clamp(13px,3.6vw,15px);color:var(--grey);margin-top:18px;line-height:1.5;}
+
+  /* ---------- Stat tiles ---------- */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0;}
+  .tile{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff;position:relative;overflow:hidden;}
+  .tile::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green);}
+  .tile .num{font-family:var(--f-display);font-style:italic;font-weight:900;font-size:clamp(34px,9vw,42px);line-height:.9;color:var(--black);}
+  .tile .lbl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:10.5px;color:var(--grey);margin-top:8px;line-height:1.35;}
+
+  /* ---------- Callouts ---------- */
+  .callout{background:var(--green-bg);border-left:5px solid var(--green);border-radius:0 12px 12px 0;padding:18px 22px;margin:22px 0;}
+  .callout.amber{background:var(--amber-bg);border-left-color:var(--amber);}
+  .callout.dark{background:var(--black);border-left-color:var(--green);color:#fff;}
+  .callout.dark p,.callout.dark strong{color:#fff;}
+  .callout .ct{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--green-d);margin-bottom:5px;}
+  .callout.amber .ct{color:var(--amber);} .callout.dark .ct{color:var(--green);}
+  .callout p{margin:2px 0;font-size:clamp(15px,4vw,16px);}
+  .callout.big p{font-family:var(--f-display);font-style:italic;font-weight:800;text-transform:uppercase;font-size:clamp(19px,5.4vw,23px);line-height:1.15;color:var(--black);}
+  .callout.dark.big p{color:#fff;}
+  .callout.light{background:#fff;border-left-width:4px;}
+  .callout.light .ct{color:var(--green-d);}
+  .callout.light.big p{color:var(--black);}
+
+  /* ---------- Area cards ---------- */
+  .cards3{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0;}
+  .card{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden;display:flex;flex-direction:column;}
+  .card .ch{padding:14px 16px 12px;border-bottom:1px solid var(--line);background:var(--paper);}
+  .card .ch .cn{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:9.5px;color:var(--green-d);font-weight:600;}
+  .card .ch .ct2{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(16px,4.4vw,18px);line-height:1;color:var(--black);margin-top:6px;}
+  .card .cb{padding:14px 16px 16px;}
+  .card .cb p{margin:0;font-size:14px;line-height:1.55;color:var(--grey);}
+
+  /* ---------- Front cards (axes / cura integral) ---------- */
+  .fronts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;}
+  .fronts.three{grid-template-columns:repeat(3,1fr);}
+  .front{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;display:flex;flex-direction:column;}
+  .front .fh{padding:14px 18px;background:var(--black);color:#fff;display:flex;align-items:center;gap:10px;}
+  .front.tech .fh{background:var(--green-d);}
+  .front .fh .fk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--green);}
+  .front.tech .fh .fk{color:#EAF4D6;}
+  .front .fh .fn{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(18px,4.8vw,20px);line-height:1;margin-top:2px;}
+  .front .fh .fic{margin-left:auto;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex:none;}
+  .front .fh .fic svg{width:20px;height:20px;stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.85;}
+  .front .fb{padding:16px 18px;flex:1;}
+  .front .fb p{margin:0;font-size:14.5px;line-height:1.55;}
+  .badge{display:inline-block;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:9px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--green-bg);color:var(--green-d);}
+
+  /* ---------- Timeline ---------- */
+  .tl{margin:20px 0 6px;padding:0;list-style:none;counter-reset:tl;}
+  .tl>li{position:relative;padding:2px 0 26px 52px;border-left:2px solid var(--line);margin-left:16px;}
+  .tl>li:last-child{border-left-color:transparent;padding-bottom:2px;}
+  .tl>li::before{counter-increment:tl;content:counter(tl);position:absolute;left:-19px;top:-4px;width:36px;height:36px;border-radius:50%;background:var(--green);color:var(--black);font-family:var(--f-display);font-style:italic;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;}
+  .tl .when{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:var(--green-d);font-weight:600;}
+  .tl h3{margin:3px 0 6px;font-size:clamp(18px,4.6vw,20px);color:var(--black);font-style:italic;}
+  .tl>li>p{margin:0;font-size:14.5px;line-height:1.55;}
+
+  .kit{margin:14px 0 4px;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden;}
+  .kit .kt{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:#fff;background:var(--green-d);font-weight:600;padding:9px 16px;}
+  .kit ul{margin:0;padding:14px 16px;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px 24px;}
+  .kit li{font-size:13px;line-height:1.35;color:var(--ink);padding-left:22px;position:relative;margin:0;}
+  .kit li::before{content:"";position:absolute;left:0;top:1px;width:14px;height:14px;border-radius:4px;background:var(--green-bg);}
+  .kit li::after{content:"";position:absolute;left:4px;top:4px;width:5px;height:8px;border:solid var(--green-d);border-width:0 2px 2px 0;transform:rotate(43deg);}
+
+  .sched{margin:10px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;}
+  .sched li{font-size:13px;line-height:1.35;color:var(--ink);padding-left:16px;position:relative;margin:0;}
+  .sched li::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:var(--green);}
+
+  /* ---------- Sport blocks + chips ---------- */
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;}
+  .chip{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:10px;font-weight:600;padding:5px 11px;border-radius:20px;background:var(--green-bg);color:var(--green-d);}
+  .chip.k{background:var(--black);color:#fff;}
+  .sblocks{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0;}
+  .sblock{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;}
+  .sblock .sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;padding:14px 18px;background:var(--paper);border-bottom:1px solid var(--line);}
+  .sblock .sh .sn{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(18px,4.8vw,20px);color:var(--black);line-height:1;}
+  .sblock .sh .stag{margin-left:auto;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:var(--green-d);font-weight:600;}
+  .sblock .sb{padding:16px 18px;}
+  .sblock .sb p{margin:0;font-size:14.5px;line-height:1.55;}
+
+  /* ---------- Athria screenshots showcase ---------- */
+  .capsec{margin-top:26px;}
+  .capsec .ck{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--green-d);font-weight:600;}
+  .capsec h3{margin:4px 0 2px;font-size:clamp(22px,6vw,26px);color:var(--black);font-style:italic;border:0;padding:0;margin-top:4px;}
+  .capsec p.d{margin:8px 0 0;font-size:clamp(15px,4vw,16px);line-height:1.55;color:#2c2c2c;}
+  .screen{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 10px 30px -16px rgba(10,10,10,.4);margin-top:16px;}
+  .screen .top{display:flex;align-items:center;gap:7px;padding:10px 14px;background:var(--paper);border-bottom:1px solid var(--line);}
+  .screen .top i{width:9px;height:9px;border-radius:50%;background:#d3d3cc;display:block;flex:none;}
+  .screen .top .u{margin-left:10px;font-family:var(--f-meta);letter-spacing:.02em;font-size:10.5px;color:var(--grey-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .screen .top .u b{color:var(--green-d);font-weight:600;}
+  .screen img{display:block;width:100%;height:auto;}
+  .showcase{display:grid;grid-template-columns:minmax(0,46%) 1fr;gap:22px;align-items:start;margin-top:16px;}
+  .showcase.phone{grid-template-columns:minmax(0,34%) 1fr;gap:24px;align-items:center;}
+  .showcase.phone .device{display:block;width:100%;height:auto;filter:drop-shadow(0 12px 28px rgba(10,10,10,.24));border-radius:12px;}
+  .stack{display:flex;flex-direction:column;gap:10px;}
+  .notes{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px;}
+  .notes.c3{grid-template-columns:repeat(3,1fr);}
+  .note{border:1px solid var(--line);border-left:4px solid var(--green);border-radius:0 10px 10px 0;padding:11px 14px;background:#fff;}
+  .note .nk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:9.5px;color:var(--green-d);font-weight:600;}
+  .note p{margin:4px 0 0;font-size:13px;line-height:1.5;color:var(--grey);}
+  .note p strong{color:var(--ink);}
+  .twoshots{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;}
+
+  /* ---------- Channels ---------- */
+  .chans{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0;}
+  .chan{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px;position:relative;overflow:hidden;}
+  .chan::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;}
+  .chan.p::after{background:var(--green);} .chan.s::after{background:var(--amber);} .chan.t::after{background:var(--grey-2);}
+  .chan .cn{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(15px,4.2vw,17px);color:var(--black);line-height:1;}
+  .chan .role{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:9.5px;color:var(--grey);margin:5px 0 9px;}
+  .chan p{margin:0;font-size:13px;line-height:1.5;color:var(--grey);}
+
+  /* ---------- Benefits ---------- */
+  .bens{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0;}
+  .ben{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px;display:flex;gap:13px;align-items:flex-start;}
+  .ben .bic{flex:none;width:32px;height:32px;border-radius:8px;background:var(--green-bg);display:flex;align-items:center;justify-content:center;}
+  .ben .bic svg{width:18px;height:18px;stroke:var(--green-d);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .ben h3{margin:0 0 3px;font-size:15px;color:var(--black);font-style:italic;line-height:1.1;}
+  .ben p{margin:0;font-size:13px;line-height:1.45;color:var(--grey);}
+
+  /* ---------- Sign-off ---------- */
+  .signoff{margin-top:36px;border-top:3px solid var(--green);padding-top:20px;}
+  .signoff .greet{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--grey);margin:0 0 4px;}
+  .signoff .team{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(24px,6.6vw,28px);color:var(--black);margin:0;}
+  .signoff .team span{color:var(--green-d);}
+
+  footer.pagefoot{
+    text-align:center;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;
+    font-size:10px;color:var(--grey-2);padding:28px 20px 40px;border-top:1px solid var(--line);margin-top:20px;
+  }
+
+  /* ---------- Athria phone mockups (self-contained, no images) ---------- */
+  .athsec{display:grid;grid-template-columns:minmax(0,290px) 1fr;gap:26px;align-items:start;margin-top:18px;}
+  .athsec.rev .phone{order:2;}
+  .athsec.rev{grid-template-columns:1fr minmax(0,290px);}
+  .phone{width:100%;max-width:290px;margin:0 auto;background:#0A0A0A;border-radius:38px;padding:8px;box-shadow:0 22px 44px -20px rgba(10,10,10,.55);}
+  .phone .scr{background:#F4F4F0;border-radius:31px;overflow:hidden;position:relative;}
+  .phone .nub{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:66px;height:5px;border-radius:3px;background:#c9c9c2;z-index:3;}
+  .amk{padding:28px 13px 15px;font-family:var(--f-body);color:#0A0A0A;font-size:12px;line-height:1.4;}
+  .amk .abr{display:flex;align-items:center;gap:7px;}
+  .amk .abr .dot{width:9px;height:9px;border-radius:50%;background:#0A0A0A;}
+  .amk .abr .nm{font-weight:800;font-size:15px;letter-spacing:-.01em;}
+  .amk .abr .v{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:8.5px;color:#9A9A96;font-weight:500;}
+  .amk .h{font-weight:800;font-size:21px;letter-spacing:-.015em;margin:13px 0 1px;}
+  .amk .d{color:#9A9A96;font-size:10.5px;margin:0;}
+  .amk .sec{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.11em;font-size:8.5px;color:#9A9A96;font-weight:600;margin:15px 0 7px;}
+  .amk .cw{background:#fff;border:1px solid #ececE6;border-radius:14px;padding:12px 13px;}
+  .amk .ch2{display:inline-block;font-size:9.5px;font-weight:700;padding:3px 8px;border-radius:20px;background:#EAEAE4;color:#555;}
+  .amk .ch2.bl{background:#E4ECF8;color:#2f5aa8;} .amk .ch2.am{background:#F6ECCF;color:#8a6712;}
+  .amk .ch2.gn{background:#EAF4D6;color:#4D7515;} .amk .ch2.gy{background:#EAEAE4;color:#555;}
+  .amk .arow{display:flex;align-items:center;gap:11px;}
+  .amk .av{width:44px;height:44px;border-radius:50%;border:2.5px solid #d64d4d;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none;}
+  .amk .av.g{border-color:#0A0A0A;background:#0A0A0A;color:#fff;}
+  .amk .an{font-weight:800;font-size:15px;line-height:1.1;}
+  .amk .am2{color:#9A9A96;font-size:10px;}
+  .amk .chv{margin-left:auto;color:#c4c4bd;font-size:18px;font-weight:400;}
+  .amk .st3{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;border-top:1px solid #ececE6;margin-top:11px;padding-top:11px;}
+  .amk .st3 .n{font-weight:800;font-size:19px;} .amk .st3 .l{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.05em;font-size:7.5px;color:#9A9A96;font-weight:600;margin-top:2px;}
+  .amk .mr{display:flex;align-items:center;gap:8px;padding:9px 0;border-top:1px solid #ececE6;}
+  .amk .mr:first-of-type{border-top:none;padding-top:2px;}
+  .amk .mr .ic{width:24px;height:24px;flex:none;color:#0A0A0A;display:flex;align-items:center;justify-content:center;}
+  .amk .mr .ic svg{width:20px;height:20px;stroke:#0A0A0A;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .amk .mr .nm2{font-weight:700;font-size:12px;flex:1;}
+  .amk .mr .pc{font-size:8.5px;font-weight:800;padding:2px 6px;border-radius:9px;background:#EAF4D6;color:#4D7515;}
+  .amk .mr .mk{font-weight:800;font-size:12.5px;}
+  .amk .mr .dt{color:#c4c4bd;font-size:9.5px;width:32px;text-align:right;flex:none;}
+  .amk .it{border-top:1px solid #f0f0ea;padding:11px 0;}
+  .amk .it:first-child{border-top:none;padding-top:1px;}
+  .amk .it .t{font-weight:800;font-size:12.5px;}
+  .amk .it .m{color:#9A9A96;font-size:10px;margin:3px 0 7px;}
+  .amk .tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .amk .tgl{display:flex;background:#EAEAE4;border-radius:20px;padding:3px;margin:11px 0 4px;}
+  .amk .tgl span{flex:1;text-align:center;font-size:10.5px;font-weight:700;padding:6px;border-radius:16px;color:#8a8a84;}
+  .amk .tgl span.on{background:#fff;color:#0A0A0A;box-shadow:0 1px 3px rgba(0,0,0,.08);}
+  .amk .fb{display:flex;align-items:center;gap:8px;padding:9px 0;border-top:1px solid #f0f0ea;}
+  .amk .fb:first-of-type{border-top:none;padding-top:2px;}
+  .amk .fb .fl{flex:1;font-weight:600;font-size:11.5px;}
+  .amk .sc{display:flex;gap:4px;} .amk .sc i{width:8px;height:8px;border-radius:50%;background:#e2e2db;} .amk .sc i.on{background:#89CD24;}
+  .amk .sc.am i.on{background:#E0A82E;}
+  .amk .lv{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.05em;font-size:8px;font-weight:700;color:#4D7515;width:52px;text-align:right;}
+  .amk .lv.am{color:#8a6712;}
+  .amk .qbox{background:#EAF4D6;border-radius:11px;padding:10px 12px;margin-top:11px;}
+  .amk .qbox .qk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:8px;font-weight:700;color:#4D7515;}
+  .amk .qbox p{margin:3px 0 0;font-size:10.5px;line-height:1.45;color:#333;}
+  .amk .car{display:flex;align-items:center;gap:10px;padding:11px 0;border-top:1px solid #f0f0ea;}
+  .amk .car:first-of-type{border-top:none;padding-top:2px;}
+  .amk .car .cav{width:34px;height:34px;border-radius:10px;background:#EAF4D6;color:#4D7515;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;flex:none;}
+  .amk .car .ci{flex:1;min-width:0;} .amk .car .ci .cn3{font-weight:700;font-size:11.5px;} .amk .car .ci .cm3{color:#9A9A96;font-size:9.5px;}
+  .amk .btn{font-size:9.5px;font-weight:800;padding:6px 11px;border-radius:20px;background:#89CD24;color:#0A0A0A;flex:none;}
+  .amk .btn.dis{background:#EAEAE4;color:#9A9A96;}
+  .amk .status{display:flex;gap:6px;margin:9px 0 2px;}
+  .amk .status .sp{flex:1;text-align:center;background:#fff;border:1px solid #ececE6;border-radius:10px;padding:8px 2px;}
+  .amk .status .sp .n{font-weight:800;font-size:16px;} .amk .status .sp .l{font-size:7.5px;color:#9A9A96;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.04em;font-weight:600;margin-top:1px;}
+  .amk .offer{width:100%;text-align:center;border:1.5px dashed #cfcfc8;border-radius:12px;padding:11px;font-weight:700;font-size:11px;color:#4D7515;margin-top:11px;}
+  .athcap{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.02em;font-size:10px;color:var(--grey-2);text-align:center;margin:9px 0 0;}
+  .athcap b{color:var(--green-d);font-weight:600;}
+
+  /* ---------- Athria: extra bits (payments, activity, wide app-window, chart) ---------- */
+  .amk .pc.am{background:#F6ECCF;color:#8a6712;}
+  .amk .pay{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;}
+  .amk .pay .pt{font-weight:700;font-size:12.5px;}
+  .amk .pay .pm{color:#9A9A96;font-size:10px;margin-top:2px;}
+  .amk .act{display:flex;gap:8px;padding:8px 0;border-top:1px solid #f0f0ea;align-items:flex-start;}
+  .amk .act:first-of-type{border-top:none;padding-top:2px;}
+  .amk .act .adot{width:7px;height:7px;border-radius:50%;margin-top:4px;flex:none;}
+  .amk .act .atx{flex:1;font-size:10.8px;line-height:1.35;}
+  .amk .act .atx b{font-weight:700;}
+  .amk .act .ad{color:#c4c4bd;font-size:9px;flex:none;}
+  .amk .occ{display:flex;gap:6px;margin:9px 0 6px;flex-wrap:wrap;}
+  .amk .occ b{width:26px;height:26px;border-radius:8px;background:#EAEAE4;color:#6a6a6a;display:flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700;flex:none;}
+  .amk .occ b.on{background:#EAF4D6;color:#4D7515;box-shadow:inset 0 0 0 1px #bcd98a;}
+  .amk .occ b.em{background:transparent;box-shadow:inset 0 0 0 1px #d4d4cd;color:#c4c4bd;border-style:dashed;}
+  .amk .conf{background:#EAF4D6;border-radius:11px;padding:9px;text-align:center;font-weight:700;font-size:11px;color:#4D7515;margin-top:8px;}
+  .amk .nav{display:flex;justify-content:space-around;border-top:1px solid #e6e6df;margin:14px -13px -15px;padding:11px 0 9px;background:#fff;}
+  .amk .nav .ni{font-size:8.5px;color:#9A9A96;text-align:center;font-weight:600;}
+  .amk .nav .ni.on{color:#0A0A0A;}
+
+  /* Wide "app window" screens (desktop-style Athria views) */
+  .awrap{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#F4F4F0;box-shadow:0 14px 36px -20px rgba(10,10,10,.4);margin-top:16px;}
+  .awrap .wtop{display:flex;align-items:center;gap:7px;padding:10px 15px;background:#fff;border-bottom:1px solid var(--line);}
+  .awrap .wtop i{width:9px;height:9px;border-radius:50%;background:#d3d3cc;display:block;flex:none;}
+  .awrap .wtop .u{margin-left:10px;font-family:var(--f-meta);font-size:10.5px;color:var(--grey-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .awrap .wtop .u b{color:var(--green-d);font-weight:600;}
+  .awk{padding:20px;font-family:var(--f-body);color:#0A0A0A;font-size:13px;}
+  .awk .ahead{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;}
+  .awk .ahead .av{width:52px;height:52px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:none;}
+  .awk .ahead .an{font-weight:800;font-size:19px;}
+  .awk .ahead .am{color:#9A9A96;font-size:11.5px;margin-top:1px;}
+  .awk .ahead .st{display:inline-flex;align-items:center;gap:5px;background:#EAF4D6;color:#3C7A2E;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;margin-top:6px;}
+  .awk .stat4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0;}
+  .awk .stat4 .c{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 14px;}
+  .awk .stat4 .c .l{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.06em;font-size:8.5px;color:var(--grey);font-weight:600;}
+  .awk .stat4 .c .n{font-weight:800;font-size:23px;margin-top:5px;line-height:1;}
+  .awk .stat4 .c .s{font-size:9.5px;color:var(--grey-2);margin-top:4px;}
+  .awk .tabs{display:flex;gap:18px;border-bottom:1px solid var(--line);margin:8px 0 14px;overflow-x:auto;}
+  .awk .tabs span{font-size:12px;color:var(--grey);padding:0 0 9px;white-space:nowrap;font-weight:600;}
+  .awk .tabs span.on{color:#0A0A0A;box-shadow:inset 0 -2px 0 #0A0A0A;}
+  .awk .lbl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:9px;color:var(--grey);font-weight:600;margin:2px 0 8px;}
+  .awk .provas{display:flex;gap:8px;overflow-x:auto;padding-bottom:5px;}
+  .awk .provas .p{flex:none;min-width:92px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;}
+  .awk .provas .p.on{background:#0A0A0A;color:#fff;border-color:#0A0A0A;}
+  .awk .provas .p .pl{font-family:var(--f-meta);text-transform:uppercase;font-size:8px;letter-spacing:.04em;color:var(--grey);font-weight:600;}
+  .awk .provas .p.on .pl{color:#cfcfc8;}
+  .awk .provas .p .pv{font-weight:800;font-size:16px;margin-top:3px;}
+  .awk .provas .p .pd{font-size:8px;color:var(--grey-2);margin-top:2px;}
+  .awk .provas .p.on .pd{color:#9a9a94;}
+  .awk .mret{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;margin:14px 0;}
+  .awk .mret .l{font-family:var(--f-meta);text-transform:uppercase;font-size:8.5px;letter-spacing:.05em;color:var(--grey);font-weight:600;}
+  .awk .mret .n{font-weight:800;font-size:20px;margin-top:4px;line-height:1;}
+  .awk .mret .n.gn{color:#3C7A2E;}
+  .awk .mret .s{font-size:9px;color:var(--grey-2);margin-top:3px;}
+  .awk .pill{display:inline-block;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:#EAF4D6;color:#3C7A2E;margin-left:5px;vertical-align:middle;}
+  .awk .chart{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;}
+  .awk .chart .chh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+  .awk .chart svg{width:100%;height:auto;display:block;}
+  .awk .seg{display:inline-flex;background:#EAEAE4;border-radius:20px;padding:3px;}
+  .awk .seg span{font-size:9.5px;font-weight:700;padding:5px 10px;border-radius:16px;color:#8a8a84;}
+  .awk .seg span.on{background:#3C7A2E;color:#fff;}
+  .awk .twocol{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;align-items:start;}
+  .awk .warn{background:#F6ECCF;border-radius:12px;padding:13px 15px;margin-bottom:14px;}
+  .awk .warn .wt{font-weight:800;font-size:13px;color:#8a6712;}
+  .awk .warn .wm{font-size:11.5px;color:#96741f;margin-top:3px;line-height:1.4;}
+  .awk .qbox2{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;}
+  .awk .confirm{display:flex;gap:10px;margin:12px 0 6px;}
+  .awk .confirm .b{flex:1;text-align:center;border:1px solid var(--line);background:#fff;border-radius:11px;padding:12px;font-weight:700;font-size:13px;}
+  .awk .prow{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid #eee;}
+  .awk .prow:first-of-type{border-top:none;}
+  .awk .prow .pn{flex:1;font-weight:700;font-size:13px;}
+  .awk .prow .pm{color:var(--grey);font-size:11px;font-variant-numeric:tabular-nums;}
+  .awk .drow{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px solid #eee;font-size:12.5px;}
+  .awk .drow:first-of-type{border-top:none;}
+  .awk .drow .k{color:var(--grey);} .awk .drow .v{font-weight:700;text-align:right;}
+  .awk .note2{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-top:12px;}
+  .awk .note2 .nt{font-weight:700;font-size:12px;margin-bottom:4px;}
+  .awk .note2 p{margin:0;font-size:12px;color:var(--grey);font-style:italic;line-height:1.5;}
+  .awk .cvrow{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:9px;}
+  .awk .cvrow .date{text-align:center;flex:none;width:42px;}
+  .awk .cvrow .date .dd{font-weight:800;font-size:19px;line-height:1;}
+  .awk .cvrow .date .dm{font-family:var(--f-meta);text-transform:uppercase;font-size:8.5px;color:var(--grey);font-weight:600;}
+  .awk .cvrow .cc{flex:1;min-width:0;}
+  .awk .cvrow .cc .ct{font-weight:800;font-size:14px;margin:4px 0 2px;}
+  .awk .cvrow .cc .cm{color:var(--grey);font-size:11px;}
+  .awk .cvrow .rt{text-align:right;flex:none;}
+  .awk .cvrow .rt .status{font-size:11px;font-weight:700;}
+  .awk .cvrow .rt .status.pend{color:#8a6712;} .awk .cvrow .rt .status.ok{color:#3C7A2E;} .awk .cvrow .rt .status.fin{color:var(--grey-2);}
+  .awk .btnk{display:inline-block;font-size:11px;font-weight:700;padding:7px 14px;border-radius:9px;background:#0A0A0A;color:#fff;margin-top:6px;}
+  .awk .btnk.ghost{background:#fff;color:#0A0A0A;border:1px solid var(--line);}
+  .awk .comm .ci{padding:9px 0;}
+  .awk .comm .ck2{display:flex;align-items:center;gap:7px;font-weight:700;font-size:12px;}
+  .awk .comm .ck2 .cd{width:8px;height:8px;border-radius:50%;flex:none;}
+  .awk .comm p{margin:4px 0 0;font-size:12px;line-height:1.5;color:#333;}
+
+  /* Desktop "Inici" dashboard (two columns) */
+  .awk .ttl{font-weight:800;font-size:26px;letter-spacing:-.015em;}
+  .awk .ttl+.dsub{color:#9A9A96;font-size:12.5px;margin:2px 0 16px;}
+  .awk .ch2{display:inline-block;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;background:#EAEAE4;color:#555;}
+  .awk .ch2.bl{background:#E4ECF8;color:#2f5aa8;} .awk .ch2.am{background:#F6ECCF;color:#8a6712;} .awk .ch2.gn{background:#EAF4D6;color:#3C7A2E;}
+  .dash{display:grid;grid-template-columns:1.45fr 1fr;gap:16px;align-items:start;}
+  .dcol{display:flex;flex-direction:column;gap:14px;}
+  .dcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 16px;}
+  .dcard .dl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:9px;color:var(--grey);font-weight:600;margin:0 0 10px;}
+  .dath{display:flex;align-items:center;gap:13px;}
+  .dath .av{width:46px;height:46px;border-radius:50%;border:2.5px solid #d64d4d;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none;}
+  .dath .an{font-weight:800;font-size:16px;display:inline;} .dath .amini{color:#9A9A96;font-size:11px;margin-left:5px;}
+  .dath .chv{margin-left:auto;color:#c4c4bd;font-size:18px;}
+  .dchips{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px;}
+  .dstat{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;border-top:1px solid #eee;margin-top:12px;padding-top:12px;}
+  .dstat .n{font-weight:800;font-size:22px;line-height:1;} .dstat .l{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.05em;font-size:8px;color:#9A9A96;font-weight:600;margin-top:4px;}
+  .dmr{display:flex;align-items:center;gap:9px;padding:9px 0;border-top:1px solid #eee;}
+  .dmr:first-of-type{border-top:none;}
+  .dmr .ic{width:22px;height:22px;flex:none;color:#0A0A0A;display:flex;align-items:center;justify-content:center;}
+  .dmr .ic svg{width:19px;height:19px;stroke:#0A0A0A;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .dmr .ic img{width:23px;height:23px;object-fit:contain;display:block;}
+  .dmr .ic img.lj{width:20px;height:20px;}
+  .dmr .nm{flex:1;font-weight:700;font-size:13px;}
+  .dmr .pc{font-size:8.5px;font-weight:800;padding:2px 6px;border-radius:9px;background:#EAF4D6;color:#3C7A2E;}
+  .dmr .pc.am{background:#F6ECCF;color:#8a6712;}
+  .dmr .mk{font-weight:800;font-size:13px;} .dmr .dt{color:#c4c4bd;font-size:9.5px;width:34px;text-align:right;flex:none;}
+  .dconv{padding:11px 0;border-top:1px solid #eee;}
+  .dconv:first-of-type{border-top:none;padding-top:1px;}
+  .dconv .t{font-weight:700;font-size:13px;} .dconv .m{color:#9A9A96;font-size:10.5px;margin:2px 0 6px;}
+  .dpay{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+  .dpay .pt{font-weight:700;font-size:14px;} .dpay .pm{color:#9A9A96;font-size:11px;margin-top:3px;}
+  .dlink{text-align:right;font-size:11px;color:#3C7A2E;font-weight:600;margin-top:10px;}
+  .dstep{display:flex;gap:10px;align-items:flex-start;padding:7px 0;}
+  .dstep .chk{width:20px;height:20px;border-radius:50%;background:#EAF4D6;color:#3C7A2E;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex:none;}
+  .dstep .t{font-weight:700;font-size:12.5px;text-decoration:line-through;color:#9A9A96;} .dstep .m{font-size:11px;color:#b0b0a8;}
+  .dact{display:flex;gap:9px;padding:9px 0;border-top:1px solid #eee;align-items:flex-start;}
+  .dact:first-of-type{border-top:none;padding-top:1px;}
+  .dact .adot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex:none;}
+  .dact .tx{flex:1;font-size:12px;line-height:1.4;} .dact .tx b{font-weight:700;}
+  .dact .ad{color:#c4c4bd;font-size:10px;flex:none;}
+  .dcal{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;}
+  .dcal .hd{font-family:var(--f-meta);text-transform:uppercase;font-size:9px;color:#b0b0a8;text-align:center;font-weight:600;padding:0 0 6px;}
+  .dcal .dy{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;color:#333;position:relative;border-radius:9px;}
+  .dcal .dy.today{background:#F6E9CC;font-weight:800;color:#0A0A0A;}
+  .dcal .dy .cd{width:5px;height:5px;border-radius:50%;margin-top:2px;}
+  .dcal .dy.empty{visibility:hidden;}
+
+  /* Feedback screen (pill selectors) */
+  .awk .fbadge{margin-left:auto;background:#E4ECF8;color:#2f5aa8;font-size:11px;font-weight:700;padding:4px 11px;border-radius:20px;flex:none;}
+  .awk .tglw{display:flex;background:#EAEAE4;border-radius:22px;padding:3px;max-width:320px;margin:16px 0 4px;}
+  .awk .tglw span{flex:1;text-align:center;font-size:12px;font-weight:700;padding:8px;border-radius:18px;color:#8a8a84;}
+  .awk .tglw span.on{background:#fff;color:#0A0A0A;box-shadow:0 1px 3px rgba(0,0,0,.08);}
+  .fbsl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.09em;font-size:9.5px;color:var(--grey);font-weight:600;margin:18px 0 4px;}
+  .fbgrid{display:grid;grid-template-columns:1fr 1fr;gap:2px 26px;}
+  .fbq{padding:11px 0;}
+  .fbq .q{font-weight:700;font-size:12.5px;margin-bottom:9px;line-height:1.3;min-height:2.5em;display:flex;align-items:flex-end;}
+  .fbopts{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;}
+  .fbopt{text-align:center;padding:8px 3px;border-radius:9px;border:1px solid #ececE6;background:#fff;color:#c0c0ba;font-weight:700;font-size:11.5px;}
+  .fbopt.on.molt{background:#EAF4D6;border-color:#bcd98a;color:#3C7A2E;}
+  .fbopt.on.avg{background:#F6ECCF;border-color:#e6cf8f;color:#8a6712;}
+  .fblg{display:flex;flex-wrap:wrap;gap:7px 16px;align-items:center;font-size:11px;color:var(--grey);margin-top:14px;padding-top:13px;border-top:1px solid #eee;}
+  .fblg .li{display:flex;align-items:center;gap:6px;}
+  .fblg .dot{width:9px;height:9px;border-radius:50%;}
+  .fbcomm{margin-top:16px;}
+  .fbcomm .ci{padding:10px 0 0;}
+  .fbcomm .ck2{display:flex;align-items:center;gap:8px;font-weight:700;font-size:13px;}
+  .fbcomm .ck2 .cd{width:9px;height:9px;border-radius:50%;flex:none;}
+  .fbcomm p{margin:5px 0 0;font-size:13px;line-height:1.55;color:#333;}
+
+  /* ---------- Index (TOC) + floating section nav ---------- */
+  h2{scroll-margin-top:68px;}
+  .toc{border:1px solid var(--line);border-radius:16px;background:#fff;padding:20px 22px 22px;margin:26px 0;}
+  .toc-h{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--green-d);font-weight:600;}
+  .toc-hint{font-size:12.5px;color:var(--grey);margin:3px 0 15px;}
+  .toc-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;}
+  .toc-list a{display:flex;align-items:center;gap:13px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none;cursor:pointer;transition:transform .14s,box-shadow .14s,border-color .14s,background .14s;}
+  .toc-list a:hover{background:#fff;border-color:var(--green);box-shadow:0 8px 20px -12px rgba(10,10,10,.28);transform:translateY(-2px);}
+  .toc-list a:focus-visible{outline:3px solid var(--green);outline-offset:2px;}
+  .toc-list .tn{width:34px;height:34px;border-radius:9px;background:var(--green-bg);color:var(--green-d);display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-style:italic;font-weight:900;font-size:16px;flex:none;transition:background .14s,color .14s;}
+  .toc-list a:hover .tn{background:var(--green);color:var(--black);}
+  .toc-list .tt{flex:1;font-weight:600;font-size:14px;line-height:1.15;}
+  .toc-list .arw{margin-left:auto;flex:none;color:var(--grey-2);transition:transform .14s,color .14s;}
+  .toc-list a:hover .arw{color:var(--green-d);transform:translateX(3px);}
+  .toc-list .arw svg{width:16px;height:16px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;display:block;}
+  .toc-list a.hot{background:var(--green-bg);border-color:var(--green);}
+  .toc-list a.hot .tn{background:var(--green);color:var(--black);}
+  .toc-list a.hot .tt{color:var(--green-ink);}
+  .toc-list a.hot .arw{color:var(--green-d);}
+
+  .navtoggle{position:fixed;width:1px;height:1px;opacity:0;pointer-events:none;}
+  .navfab{position:fixed;right:20px;bottom:20px;width:52px;height:52px;border-radius:50%;background:var(--black);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(10,10,10,.55);cursor:pointer;z-index:50;transition:background .15s,transform .15s;}
+  .navfab:hover{transform:translateY(-2px);}
+  .navfab svg{width:22px;height:22px;stroke:#fff;stroke-width:2.2;fill:none;stroke-linecap:round;}
+  .navfab .x{display:none;}
+  .navtoggle:checked ~ .navfab{background:var(--green-d);}
+  .navtoggle:checked ~ .navfab .bars{display:none;} .navtoggle:checked ~ .navfab .x{display:block;}
+  .navtoggle:focus-visible ~ .navfab{outline:3px solid var(--green);outline-offset:2px;}
+  .navpanel{position:fixed;right:20px;bottom:82px;width:260px;max-width:calc(100vw - 40px);background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 46px -12px rgba(10,10,10,.4);padding:8px;z-index:49;opacity:0;transform:translateY(12px) scale(.98);transform-origin:bottom right;pointer-events:none;transition:opacity .18s ease,transform .18s ease;}
+  .navtoggle:checked ~ .navpanel{opacity:1;transform:none;pointer-events:auto;}
+  .navpanel .np-h{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--grey);font-weight:600;padding:9px 11px 7px;}
+  .navpanel a{display:flex;gap:10px;align-items:baseline;padding:9px 11px;border-radius:9px;color:var(--ink);text-decoration:none;font-size:13.5px;}
+  .navpanel a .tn{font-family:var(--f-display);font-style:italic;font-weight:900;color:var(--green-d);font-size:13px;width:20px;flex:none;}
+  .navpanel a:hover{background:var(--paper);}
+
+  /* ---------- Mobile reflow ---------- */
+  @media (max-width:680px){
+    .stats{grid-template-columns:1fr;gap:10px;}
+    .tile{display:flex;align-items:center;gap:16px;}
+    .tile .num{font-size:40px;}
+    .tile .lbl{margin-top:0;}
+    .cards3,.fronts,.fronts.three,.bens,.chans,.twoshots,.notes,.notes.c3{grid-template-columns:1fr;}
+    .kit ul,.sched{grid-template-columns:1fr;}
+    .showcase,.showcase.phone{grid-template-columns:1fr;gap:14px;}
+    .showcase.phone .device{max-width:280px;margin:0 auto;}
+    .athsec,.athsec.rev{grid-template-columns:1fr;gap:18px;}
+    .athsec.rev .phone{order:0;}
+    .awk{padding:14px;}
+    .awk .stat4,.awk .mret{grid-template-columns:repeat(2,1fr);}
+    .awk .twocol,.dash,.fbgrid{grid-template-columns:1fr;}
+    .fbq .q{min-height:0;}
+    .toc-list{grid-template-columns:1fr;}
+    .awk .cvrow{flex-wrap:wrap;}
+    .awk .cvrow .rt{width:100%;text-align:left;margin-left:56px;}
+    .tl>li{padding-left:46px;margin-left:14px;}
+  }
+  @media (max-width:400px){
+    .topbar span{display:none;}
+  }
+
+  /* ---------- Pricing programs & tiers (Quotes) ---------- */
+  .program{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;margin:20px 0;}
+  .program .ph{padding:15px 20px;background:var(--black);color:#fff;display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;}
+  .program.tech .ph{background:var(--green-d);}
+  .program .ph .pk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--green);width:100%;}
+  .program.tech .ph .pk{color:#EAF4D6;}
+  .program .ph .pn{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(19px,5vw,24px);line-height:1;}
+  .program .ph .ptag{margin-left:auto;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:10px;color:var(--grey-2);align-self:flex-end;}
+  .program.tech .ph .ptag{color:#cfe3a8;}
+  .program .pbody{padding:6px 20px 18px;}
+  .program .pintro{margin:12px 0 2px;font-size:14.5px;line-height:1.6;color:var(--ink);}
+  .tiers{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0 2px;}
+  .tiers.one{grid-template-columns:1fr;max-width:none;}
+  .tier{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--paper);position:relative;overflow:hidden;display:flex;align-items:center;gap:14px;}
+  .tier::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green);}
+  .tier.add::after{background:var(--amber);}
+  .tier .ti{flex:1;min-width:0;}
+  .tier .tname{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(16px,4.4vw,19px);color:var(--black);line-height:1;}
+  .tier .tdesc{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.05em;font-size:9.5px;color:var(--grey);margin-top:7px;line-height:1.4;}
+  .tier .price{font-family:var(--f-display);font-style:italic;font-weight:900;font-size:clamp(26px,7vw,34px);color:var(--green-ink);line-height:.82;flex:none;text-align:right;white-space:nowrap;}
+  .tier .price small{font-family:var(--f-meta);font-style:normal;font-weight:600;font-size:10px;letter-spacing:.06em;color:var(--grey-2);display:block;margin-top:5px;text-transform:uppercase;}
+  .tier.add .price{color:var(--amber);}
+
+  /* ---------- Definition table (concept → meaning) ---------- */
+  .deftable{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;margin:18px 0 4px;}
+  .deftable .row{display:grid;grid-template-columns:minmax(120px,.85fr) 1.7fr;border-top:1px solid var(--line);}
+  .deftable .row:first-child{border-top:none;}
+  .deftable .row .k{padding:13px 16px;background:var(--paper);font-family:var(--f-display);font-style:italic;font-weight:800;text-transform:uppercase;font-size:14.5px;color:var(--black);line-height:1.05;border-right:1px solid var(--line);}
+  .deftable .row .v{padding:13px 16px;font-size:14px;line-height:1.5;color:var(--ink);}
+  .deftable .hd .k,.deftable .hd .v{font-family:var(--f-meta);font-style:normal;text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:600;background:var(--black);color:#fff;}
+  .deftable .v .u{font-family:var(--f-meta);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:11px;color:var(--grey-2);}
+
+  @media (max-width:680px){
+    .tiers{grid-template-columns:1fr;}
+    .deftable .row{grid-template-columns:1fr;}
+    .deftable .row .k{border-right:none;border-bottom:1px solid var(--line);}
+    .deftable .hd{display:none;}
+  }
+
+
+  /* ---------- Athlete journey (progression rail) ---------- */
+  .journey{margin:22px 0 6px;}
+  .jsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:0 22px;}
+  .jstep{display:flex;flex-direction:column;}
+  .jcard{flex:1;border:1px solid var(--line);border-radius:16px;background:#fff;padding:20px 22px 22px;}
+  .jcard .jk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.13em;font-size:11px;color:var(--green-d);font-weight:600;}
+  .jcard .jt{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(20px,4.6vw,25px);line-height:1;color:var(--black);margin:12px 0 13px;}
+  .jcard p{margin:0;font-size:14.5px;line-height:1.55;color:var(--grey);}
+  .jconn{position:relative;height:16px;margin:18px 0 12px;display:flex;align-items:center;justify-content:center;}
+  .jconn::before{content:"";position:absolute;top:50%;left:-50%;right:-50%;height:3px;background:var(--green);transform:translateY(-50%);border-radius:2px;}
+  .jstep:first-child .jconn::before{left:46%;}
+  .jstep:last-child .jconn::before{right:46%;}
+  .jdot{position:relative;z-index:1;width:15px;height:15px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px var(--paper);}
+  .jlabel{text-align:center;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--grey);font-weight:600;line-height:1.3;}
+  @media (max-width:680px){
+    .jsteps{grid-template-columns:1fr;gap:0;}
+    .jconn{margin:14px 0 8px;}
+    .jconn::before,.jstep:first-child .jconn::before,.jstep:last-child .jconn::before{left:50%;right:50%;}
+  }
+
+
+  /* ---------- Price summary (d'un cop d'ull) ---------- */
+  .pricesum{border:1px solid var(--line);border-radius:16px;background:#fff;padding:20px 22px 18px;margin:24px 0;box-shadow:0 12px 34px -22px rgba(10,10,10,.4);}
+  .pricesum .psh{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;border-bottom:2px solid var(--black);padding-bottom:12px;margin-bottom:16px;}
+  .pricesum .psk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.18em;font-size:10.5px;color:var(--green-d);font-weight:600;}
+  .pricesum .pst{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(24px,6.4vw,32px);line-height:.9;color:var(--black);margin-top:5px;}
+  .pricesum .pstag{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:10px;color:var(--grey);font-weight:600;white-space:nowrap;}
+  .psgrid{display:grid;grid-template-columns:1.15fr 1fr;gap:14px;align-items:start;}
+  .pscol{display:flex;flex-direction:column;gap:14px;}
+  .psprog{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:var(--paper);position:relative;overflow:hidden;}
+  .psprog::after{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--green);}
+  .psprog.tec::after{background:var(--amber);}
+  .psprog.art::after{background:var(--black);}
+  .psprog .psname{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:16px;color:var(--black);line-height:1;margin-bottom:9px;}
+  .psprog .psname span{font-family:var(--f-meta);font-style:normal;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:9px;color:var(--grey);white-space:nowrap;}
+  .psrow{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px dashed var(--line);}
+  .psrow:first-child{border-top:none;}
+  .psrow .pl{font-size:13.5px;color:var(--ink);}
+  .psrow .pv{font-family:var(--f-display);font-style:italic;font-weight:900;font-size:20px;color:var(--green-ink);white-space:nowrap;line-height:1;}
+  .psrow .pv.am{color:var(--amber);}
+  .psfoot{display:flex;flex-wrap:wrap;gap:7px 18px;margin-top:16px;padding-top:13px;border-top:1px solid var(--line);}
+  .psfoot span{font-size:12px;color:var(--grey);position:relative;padding-left:16px;line-height:1.4;}
+  .psfoot span::before{content:"";position:absolute;left:0;top:5px;width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .psfoot strong{color:var(--ink);font-weight:700;}
+  .pslink{display:inline-flex;align-items:center;gap:7px;margin-top:15px;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:600;color:var(--green-d);text-decoration:none;}
+  .pslink svg{width:15px;height:15px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .pslink:hover{color:var(--green-ink);}
+  .cta{display:inline-flex;align-items:center;gap:9px;margin-top:13px;padding:12px 20px;border-radius:12px;background:var(--green);color:var(--black);font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;font-weight:700;text-decoration:none;transition:transform .14s,box-shadow .14s,background .14s,color .14s;}
+  .cta:hover{background:var(--green-d);color:#fff;transform:translateY(-2px);box-shadow:0 12px 26px -14px rgba(77,117,21,.6);}
+  .cta svg{width:16px;height:16px;stroke:currentColor;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  @media (max-width:680px){
+    .psgrid{grid-template-columns:1fr;}
+    .pricesum .psh{flex-wrap:wrap;align-items:flex-start;}
+  }
+
+  /* ---------- Lock-rate ribbon (matrícula = mantén els preus) ---------- */
+  .lockrate{display:flex;align-items:center;gap:16px;margin:16px 0 26px;padding:18px 22px;background:var(--black);color:#fff;border-radius:16px;position:relative;overflow:hidden;box-shadow:0 14px 34px -22px rgba(10,10,10,.6);}
+  .lockrate::after{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--green);}
+  .lockrate .lric{flex:none;width:48px;height:48px;border-radius:13px;background:rgba(137,205,36,.16);display:flex;align-items:center;justify-content:center;}
+  .lockrate .lric svg{width:25px;height:25px;stroke:var(--green);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .lockrate .lrb{flex:1;min-width:0;}
+  .lockrate .lrk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:10.5px;color:var(--green);font-weight:600;}
+  .lockrate .lrt{font-family:var(--f-display);font-style:italic;font-weight:800;text-transform:uppercase;font-size:clamp(18px,4.9vw,24px);line-height:1.06;color:#fff;margin:5px 0 6px;}
+  .lockrate .lrt .hl{color:var(--green);}
+  .lockrate .lrd{font-size:13.5px;line-height:1.5;color:#d7d7d2;margin:0;}
+  .lockrate .lrd strong{color:#fff;font-weight:700;}
+  .lockrate .lrd a{color:var(--green);font-weight:600;text-decoration:none;white-space:nowrap;}
+  .lockrate .lrd a:hover{text-decoration:underline;}
+  @media (max-width:560px){
+    .lockrate{flex-direction:column;align-items:flex-start;gap:12px;padding:16px 18px;}
+  }
+
+
+  /* ---------- Programs relationship map (section 02 intro) ---------- */
+  .progmap{border:1px solid var(--line);border-radius:16px;background:var(--paper);padding:18px 18px 20px;margin:18px 0 26px;}
+  .progmap .pmh{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--green-d);font-weight:600;margin-bottom:14px;}
+  .pmcombo{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;gap:12px;}
+  .pmnode{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;position:relative;overflow:hidden;}
+  .pmnode::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green);}
+  .pmnode.add::after{background:var(--amber);}
+  .pmnode.alt::after{background:var(--black);}
+  .pmnode .pmn{font-family:var(--f-display);font-style:italic;font-weight:900;font-size:23px;color:transparent;-webkit-text-stroke:1.5px var(--green);flex:none;line-height:1;}
+  .pmnode.add .pmn{-webkit-text-stroke-color:var(--amber);}
+  .pmnode.alt .pmn{-webkit-text-stroke-color:var(--black);}
+  .pmnode .pmi{flex:1;min-width:0;}
+  .pmnode .pmname{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:17px;color:var(--black);line-height:1;}
+  .pmnode .pmrole{font-size:12px;color:var(--grey);margin-top:5px;line-height:1.35;}
+  .pmnode .pmprice{font-family:var(--f-display);font-style:italic;font-weight:900;font-size:16px;color:var(--green-ink);flex:none;white-space:nowrap;text-align:right;line-height:1;}
+  .pmnode .pmprice small{display:block;font-family:var(--f-meta);font-style:normal;font-weight:600;font-size:8px;letter-spacing:.06em;color:var(--grey-2);text-transform:uppercase;margin-top:3px;}
+  .pmnode.add .pmprice{color:var(--amber);}
+  .pmplus{display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-style:italic;font-weight:900;font-size:26px;color:var(--grey-2);}
+  .pmor{display:flex;align-items:center;text-align:center;gap:12px;margin:15px 2px;}
+  .pmor::before,.pmor::after{content:"";height:1px;background:var(--line);flex:1;}
+  .pmor span{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:var(--grey);font-weight:600;white-space:nowrap;}
+  @media (max-width:680px){
+    .pmcombo{grid-template-columns:1fr;}
+    .pmplus{padding:3px 0;font-size:22px;}
+  }
+
+
+  /* ---------- Fact list inside callouts (calm bullets) ---------- */
+  .callout .factlist{display:grid;gap:9px;margin-top:8px;}
+  .callout .factlist span{display:block;font-size:clamp(14px,3.8vw,15px);color:var(--ink);position:relative;padding-left:18px;line-height:1.5;}
+  .callout .factlist span::before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;background:var(--amber);}
+  .callout.amber .factlist strong{color:var(--black);font-weight:700;}
+
+  .psrow{align-items:center;}
+  .psrow .pv small{display:block;font-family:var(--f-meta);font-style:normal;font-weight:600;font-size:8px;letter-spacing:.06em;color:var(--grey-2);text-transform:uppercase;margin-top:3px;text-align:right;line-height:1;}
+
+  /* ---------- Annex: categories i any de naixement ---------- */
+  .annex{margin-top:42px;padding-top:26px;border-top:1px solid var(--line);scroll-margin-top:68px;}
+  .annex .ax-k{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:var(--green-d);font-weight:600;}
+  .annex h2.ax-t{border:0;padding:0;margin:6px 0 0;scroll-margin-top:68px;}
+  .annex .ax-d{margin:8px 0 0;color:var(--grey);font-size:clamp(14px,3.8vw,15px);line-height:1.55;}
+  .deftable.cat{margin-top:16px;}
+  .deftable.cat .row:not(.hd) .k{font-size:15.5px;}
+  .deftable.cat .row:not(.hd) .v{font-weight:700;color:var(--black);font-variant-numeric:tabular-nums;letter-spacing:.01em;}
+  .toc-list .tn-ic svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+</head>
+<body>
+
+<div class="topbar" id="top">
+  <div class="inner">
+    <img src="assets/lockup_light.png" alt="Dinami-K · Club Atletisme Vilanova i la Geltrú">
+    <span>Quotes · Temporada 2026/27</span>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="cover">
+    <p class="kicker">Escola d'Atletisme · Vilanova i la Geltrú</p>
+    <div class="bar"></div>
+    <h1>Els nostres programes i quotes</h1>
+    <p class="sub">Els tres programes del club i les seves quotes, explicats amb claredat · Temporada 2026/27</p>
+  </section>
+
+  <p class="lead">Benvinguts a Dinami-K. Aquí us expliquem amb claredat els <strong>tres programes</strong> del club, què inclou cadascun i quant costen, perquè trobeu fàcilment l'opció que encaixa amb el vostre fill o filla.</p>
+
+  <p>Som una escola d'atletisme consolidada: atletes que s'inicien, atletes que entrenen diversos dies a la setmana, atletes que treballen una especialitat concreta i grups que ja competeixen al màxim nivell.</p>
+
+  <p>El club s'organitza en <strong>tres programes</strong>, cadascun amb el seu valor. No es tracta només de les quotes: <strong>es tracta d'explicar amb claredat què ofereix cada programa</strong> perquè cada família sàpiga amb exactitud on és el seu fill o filla i per què.</p>
+
+  <p>Un club <strong>clar, transparent i ben adaptat</strong> a l'evolució de cada atleta.</p>
+
+  <div class="stats">
+    <div class="tile"><div class="num">3</div><div class="lbl">Programes esportius, cadascun amb el seu valor</div></div>
+    <div class="tile"><div class="num">2</div><div class="lbl">Costos separats: quota esportiva i federació a part</div></div>
+    <div class="tile"><div class="num"><span style="font-size:.42em;">fins </span>9<span style="font-size:.5em;"> agost</span></div><div class="lbl">Reserva anticipada mantenint els preus de la temporada 25-26</div></div>
+  </div>
+
+  <div class="callout dark big">
+    <div class="ct">La idea en una frase</div>
+    <p>Tres programes per acompanyar cada atleta segons el seu moment i els seus objectius.</p>
+  </div>
+
+  <section class="pricesum" aria-label="Resum de preus">
+    <div class="psh">
+      <div>
+        <div class="psk">D'un cop d'ull</div>
+        <div class="pst">Quant costa</div>
+      </div>
+      <div class="pstag">Preus per trimestre</div>
+    </div>
+    <div class="psgrid">
+      <div class="psprog">
+        <div class="psname">Escola <span>· entrenament base</span></div>
+        <div class="psrow"><span class="pl">1 dia / setmana</span><span class="pv">75&nbsp;€<small>/ trimestre</small></span></div>
+        <div class="psrow"><span class="pl">2 dies / setmana</span><span class="pv">105&nbsp;€<small>/ trimestre</small></span></div>
+        <div class="psrow"><span class="pl">3 dies / setmana</span><span class="pv">135&nbsp;€<small>/ trimestre</small></span></div>
+        <div class="psrow"><span class="pl">4 dies / setmana</span><span class="pv">150&nbsp;€<small>/ trimestre</small></span></div>
+      </div>
+      <div class="pscol">
+        <div class="psprog tec">
+          <div class="psname">+ Tecnificació <span>· opcional, se suma</span></div>
+          <div class="psrow"><span class="pl">1 sessió / setmana</span><span class="pv am">+35&nbsp;€<small>/ trimestre</small></span></div>
+          <div class="psrow"><span class="pl">2 sessions / setmana</span><span class="pv am">+60&nbsp;€<small>/ trimestre</small></span></div>
+        </div>
+        <div class="psprog art">
+          <div class="psname">Alt rendiment <span>· programa específic</span></div>
+          <div class="psrow"><span class="pl">Programa complet</span><span class="pv">180&nbsp;€<small>/ trimestre</small></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="psfoot">
+      <span>Totes les quotes són <strong>trimestrals</strong></span>
+      <span>+ <strong>Matrícula 50&nbsp;€</strong> l'any per atleta</span>
+      <span>Llicència i costos de <strong>federació</strong>: es facturen a part i són <strong>obligatoris</strong> (inclouen l'assegurança de l'atleta)</span>
+      <span>Es mantenen els <strong>descomptes del 15%</strong> per pagament únic i per germans (no acumulables)</span>
+    </div>
+    <a class="pslink" href="#s02">Què vol dir cada programa <svg viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+  </section>
+
+  <div class="lockrate">
+    <span class="lric" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span>
+    <div class="lrb">
+      <div class="lrk">Avantatge · Reserva anticipada</div>
+      <div class="lrt">Fes la <span class="hl">matrícula abans del 9 d'agost</span> i mantén els preus de la temporada 25-26</div>
+      <p class="lrd">Amb la matrícula de <strong>50&nbsp;€</strong> assegures la plaça i <strong>conserves els preus de la temporada 25-26</strong>, sense increment per a la 2026/27. <a href="#s05">Com funciona&nbsp;→</a></p>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Contingut del document">
+    <div class="toc-h">Contingut</div>
+    <p class="toc-hint">Toca una secció per anar-hi directament.</p>
+    <ol class="toc-list">
+      <li><a href="#s01"><span class="tn">01</span><span class="tt">El recorregut de l'atleta</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s02"><span class="tn">02</span><span class="tt">Tres programes i les quotes</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s03"><span class="tn">03</span><span class="tt">Dubtes habituals, resolts</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s04"><span class="tn">04</span><span class="tt">Cada camí compta</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a class="hot" href="#s05"><span class="tn">05</span><span class="tt">Reserva anticipada fins 9 agost</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s06"><span class="tn">06</span><span class="tt">Com confirmar la plaça</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li style="grid-column:1 / -1;"><a href="#annex"><span class="tn tn-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9.5h18M9 4v16"/></svg></span><span class="tt">Categories i any de naixement · annex</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+    </ol>
+  </nav>
+
+  <!-- ============ 01 · EL RECORREGUT DE L'ATLETA ============ -->
+  <h2 id="s01"><span class="n">01</span>El recorregut de l'atleta</h2>
+
+  <p>El nostre model acompanya l'atleta des de la iniciació fins al rendiment competitiu. Una mateixa estructura, <strong>tres etapes que s'enllacen de manera natural</strong> segons l'edat, la maduresa i els objectius de cadascú.</p>
+
+  <div class="journey">
+    <div class="jsteps">
+      <div class="jstep">
+        <div class="jcard"><div class="jk">01 · Escola</div><div class="jt">El punt<br>de partida</div><p>Iniciació, hàbits, valors, progressió i vincle amb les famílies.</p></div>
+        <div class="jconn"><span class="jdot"></span></div>
+        <div class="jlabel">Iniciació</div>
+      </div>
+      <div class="jstep">
+        <div class="jcard"><div class="jk">02 · Tecnificació</div><div class="jt">El treball<br>específic</div><p>Treball per disciplines, seguiment individual i millora tècnica contínua.</p></div>
+        <div class="jconn"><span class="jdot"></span></div>
+        <div class="jlabel">Tecnificació</div>
+      </div>
+      <div class="jstep">
+        <div class="jcard"><div class="jk">03 · Projecció i alt rendiment</div><div class="jt">On es<br>projecta el talent</div><p>L'entorn on els atletes amb més projecció preparen campionats i objectius esportius.</p></div>
+        <div class="jconn"><span class="jdot"></span></div>
+        <div class="jlabel">Projecció competitiva</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout light">
+    <div class="ct">Especialització</div>
+    <p>Salts, velocitat, tanques, relleus, combinades i altres disciplines. Una estructura capaç d'acompanyar l'atleta des dels primers passos fins als <strong>Campionats de Catalunya i d'Espanya</strong>.</p>
+  </div>
+
+  <!-- ============ 02 · TRES PROGRAMES ============ -->
+  <h2 id="s02"><span class="n">02</span>Tres programes, un mateix club</h2>
+
+  <p>El club s'organitza en tres grans programes. La majoria d'atletes són a l'escola; alguns hi sumen tecnificació per treballar una especialitat; i altres segueixen el programa de projecció i alt rendiment. <strong>No són graons de «millor» a «pitjor»</strong>: són camins diferents, tots igual d'importants, segons l'edat, els objectius i el compromís de cada atleta.</p>
+
+  <div class="progmap">
+    <div class="pmh">Com es combinen els tres programes</div>
+    <div class="pmcombo">
+      <div class="pmnode base">
+        <div class="pmn">01</div>
+        <div class="pmi"><div class="pmname">Escola</div><div class="pmrole">La base de tothom · tries els dies</div></div>
+        <div class="pmprice">75–150&nbsp;€<small>/ trim</small></div>
+      </div>
+      <div class="pmplus">+</div>
+      <div class="pmnode add">
+        <div class="pmn">02</div>
+        <div class="pmi"><div class="pmname">Tecnificació</div><div class="pmrole">Opcional · se suma a l'escola</div></div>
+        <div class="pmprice">+35/+60&nbsp;€<small>/ trim</small></div>
+      </div>
+    </div>
+    <div class="pmor"><span>o bé, per criteri tècnic</span></div>
+    <div class="pmnode alt">
+      <div class="pmn">03</div>
+      <div class="pmi"><div class="pmname">Projecció i alt rendiment</div><div class="pmrole">Programa específic a part · s'hi accedeix per criteri tècnic</div></div>
+      <div class="pmprice">180&nbsp;€<small>/ trim</small></div>
+    </div>
+  </div>
+
+  <!-- Programa 01 · Escola -->
+  <div class="program">
+    <div class="ph">
+      <span class="pk">Programa 01</span>
+      <span class="pn">Escola</span>
+      <span class="ptag">Entrenament base</span>
+    </div>
+    <div class="pbody">
+      <p class="pintro">La base del club, organitzada per dies d'entrenament a la setmana i per grups d'edat i nivell. Aquí s'aprèn, es progressa i es gaudeix de l'atletisme. És el punt de partida de tots els atletes.</p>
+      <div class="tiers">
+        <div class="tier"><div class="ti"><div class="tname">1 dia / setmana</div><div class="tdesc">Porta d'entrada</div></div><div class="price">75&nbsp;€<small>/ trimestre</small></div></div>
+        <div class="tier"><div class="ti"><div class="tname">2 dies / setmana</div><div class="tdesc">Recomanat fins a Sub-12</div></div><div class="price">105&nbsp;€<small>/ trimestre</small></div></div>
+        <div class="tier"><div class="ti"><div class="tname">3 dies / setmana</div><div class="tdesc">Recomanat des de Sub-14</div></div><div class="price">135&nbsp;€<small>/ trimestre</small></div></div>
+        <div class="tier"><div class="ti"><div class="tname">4 dies / setmana</div><div class="tdesc">Base ampliat</div></div><div class="price">150&nbsp;€<small>/ trimestre</small></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Programa 02 · Tecnificació -->
+  <div class="program tech">
+    <div class="ph">
+      <span class="pk">Programa 02</span>
+      <span class="pn">Tecnificació</span>
+      <span class="ptag">Sessions addicionals</span>
+    </div>
+    <div class="pbody">
+      <p class="pintro">La tècnica forma part de l'Escola i de l'ADN de Dinami-K: a totes les sessions els atletes aprenen i milloren la tècnica de les disciplines —curses, salts, tanques, llançaments i coordinació—, i això <strong>ja està inclòs en la quota d'Escola, sense cap suplement</strong>.</p>
+      <p class="pintro">La Tecnificació és un <strong>complement opcional</strong> per aprofundir en una disciplina concreta —perxa, salts, velocitat, tanques, llançaments, combinades…— mitjançant sessions addicionals, amb grups, objectius i planificació específics.</p>
+      <div class="callout amber" style="margin:16px 0 2px;">
+        <div class="ct">Com funciona</div>
+        <p>Les sessions de Tecnificació <strong>se sumen als teus dies d'Escola</strong>: no els substitueixen ni computen com un dia d'Escola. Exemple: 2 dies d'Escola + 1 sessió de Tecnificació = 3 dies d'entrenament, amb el suplement corresponent.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier add"><div class="ti"><div class="tname">1 sessió / setmana</div><div class="tdesc">Extra, se suma als teus dies d'escola</div></div><div class="price">+35&nbsp;€<small>/ trimestre</small></div></div>
+        <div class="tier add"><div class="ti"><div class="tname">2 sessions / setmana</div><div class="tdesc">Extra, se sumen als teus dies d'escola</div></div><div class="price">+60&nbsp;€<small>/ trimestre</small></div></div>
+      </div>
+      <p class="footnote">La Tecnificació és <strong>opcional</strong> i requereix el <strong>vistiplau de la direcció tècnica</strong>. <strong>Grups mínims:</strong> les sessions de Tecnificació requereixen un nombre mínim de participants per poder obrir-se; si no s'assoleix, el grup es pot ajornar, agrupar o reorganitzar.</p>
+    </div>
+  </div>
+
+  <!-- Programa 03 · Projecció i alt rendiment -->
+  <div class="program">
+    <div class="ph">
+      <span class="pk">Programa 03</span>
+      <span class="pn">Projecció i alt rendiment</span>
+      <span class="ptag">Programa específic</span>
+    </div>
+    <div class="pbody">
+      <p class="pintro">Un programa diferenciat amb planificació individualitzada, seguiment de l'equip tècnic, objectius i més compromís. Acull tant atletes en projecció com els que ja competeixen al màxim nivell: comparteixen el mateix entrenament. <strong>S'hi accedeix per criteri tècnic i esportiu.</strong></p>
+      <div class="tiers one">
+        <div class="tier"><div class="ti"><div class="tname">Programa complet</div><div class="tdesc">Planificació i seguiment individualitzats</div></div><div class="price">180&nbsp;€<small>/ trimestre</small></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout amber">
+    <div class="ct">El que has de saber</div>
+    <div class="factlist">
+      <span>Totes les quotes són <strong>trimestrals</strong></span>
+      <span>+ <strong>Matrícula 50&nbsp;€</strong> l'any per atleta</span>
+      <span>Llicència i costos de <strong>federació</strong>: es facturen a part i són <strong>obligatoris</strong> (inclouen l'assegurança de l'atleta)</span>
+      <span>Es mantenen els <strong>descomptes del 15%</strong> per pagament únic i per germans (no acumulables)</span>
+    </div>
+  </div>
+
+  <!-- ============ 03 · DUBTES HABITUALS ============ -->
+  <h2 id="s03"><span class="n">03</span>Dubtes habituals, resolts</h2>
+
+  <p>De vegades el «nombre de dies» genera confusió. Volem deixar clares dues coses:</p>
+
+  <div class="cards3">
+    <div class="card">
+      <div class="ch"><div class="cn">Aclariment 01</div><div class="ct2">Els dies no són categories</div></div>
+      <div class="cb"><p>Entrenar 4 dies és <strong>entrenament base ampliat</strong>, no és projecció i alt rendiment. El teu atleta pot venir 4 dies i pagar la seva quota d'escola sense estar al programa específic.</p></div>
+    </div>
+    <div class="card">
+      <div class="ch"><div class="cn">Aclariment 02</div><div class="ct2">Compartir grup no canvia la quota</div></div>
+      <div class="cb"><p>Els grups poden reunir atletes amb experiència i projecció diferents. Compartir grup o horari no implica la mateixa quota: <strong>cada família paga pel programa i les sessions que rep</strong>, no pel grup amb què coincideix.</p></div>
+    </div>
+  </div>
+
+  <div class="deftable">
+    <div class="row hd"><div class="k">Concepte</div><div class="v">Què significa</div></div>
+    <div class="row"><div class="k">Més dies</div><div class="v">Més volum d'entrenament dins de l'escola.</div></div>
+    <div class="row"><div class="k">Tecnificació</div><div class="v">Sessions específiques addicionals, fora dels teus dies d'escola, amb aprovació tècnica.</div></div>
+    <div class="row"><div class="k">Projecció i alt rendiment</div><div class="v">Programa específic, amb planificació, seguiment i compromís més grans.</div></div>
+  </div>
+
+  <!-- ============ 04 · CADA CAMÍ COMPTA ============ -->
+  <h2 id="s04"><span class="n">04</span>Cada camí compta</h2>
+
+  <p>Volem evitar un malentès: <strong>l'escola és un programa complet i valuós per si mateix</strong>, no un pas previ obligat cap al rendiment. No tots els atletes volen, poden o necessiten el mateix recorregut, i això està bé.</p>
+
+  <div class="callout dark">
+    <div class="ct">La nostra filosofia</div>
+    <p>La tecnificació està oberta a qui vol fer un pas més en una especialitat, i l'alt rendiment és només un dels camins possibles, no una meta per a tothom. Cada programa respon a objectius i nivells de compromís diferents, <strong>tots igual d'importants per a Dinami-K</strong>.</p>
+  </div>
+
+  <h3>Què hi guanyeu les famílies</h3>
+  <div class="bens">
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div>
+      <div><h3>Més claredat</h3><p>Sabeu exactament en quin programa és el vostre atleta i què inclou.</p></div>
+    </div>
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg></div>
+      <div><h3>Més transparència</h3><p>La quota esportiva i els costos federatius van separats, perquè es vegi què es paga en cada cas.</p></div>
+    </div>
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+      <div><h3>Coherència</h3><p>Cada quota es correspon amb el programa i les sessions que rep l'atleta.</p></div>
+    </div>
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 20c0-3 2.5-5 5-5s5 2 5 5M12 20c0-3 2.5-5 5-5s5 2 5 5"/></svg></div>
+      <div><h3>Millor organització</h3><p>Grups ordenats, amb entrenadors i horaris pensats per a cada atleta.</p></div>
+    </div>
+  </div>
+
+  <!-- ============ 05 · RESERVA ANTICIPADA ============ -->
+  <h2 id="s05"><span class="n">05</span>Reserva anticipada i mantén els preus</h2>
+
+  <p>Per premiar les famílies que confirmen aviat la seva continuïtat —i per ajudar-nos a organitzar millor grups, entrenadors i horaris— tenim una <strong>campanya de reserva anticipada</strong>: bloquegeu els preus de la temporada 25-26 de cara a la nova temporada.</p>
+
+  <div class="callout big">
+    <div class="ct">L'avantatge de reservar aviat</div>
+    <p>Mantén els preus de les quotes de la temporada 25-26 per a les quotes de 2026/27.</p>
+  </div>
+
+  <p>Només has de <strong>formalitzar la matrícula de 50&nbsp;€ abans del 9 d'agost</strong>. Amb aquest pas assegures la plaça i <strong>conserves els preus de la temporada 25-26</strong>, sense cap increment de cara a la nova temporada.</p>
+
+  <h3>Preus que es mantenen (temporada 25-26)</h3>
+  <p>Reservant abans del 9 d'agost, aquests són els preus de la quota trimestral que conserves per a la temporada 2026/27:</p>
+
+  <div class="deftable cat">
+    <div class="row hd"><div class="k">Dies per setmana</div><div class="v">Quota trimestral</div></div>
+    <div class="row"><div class="k">1 dia/setmana</div><div class="v">65&nbsp;€ <span class="u">/ trimestre</span></div></div>
+    <div class="row"><div class="k">2 dies/setmana</div><div class="v">100&nbsp;€ <span class="u">/ trimestre</span></div></div>
+    <div class="row"><div class="k">3 dies/setmana</div><div class="v">125&nbsp;€ <span class="u">/ trimestre</span></div></div>
+    <div class="row"><div class="k">4 dies/setmana</div><div class="v">140&nbsp;€ <span class="u">/ trimestre</span></div></div>
+  </div>
+
+  <p class="footnote" style="margin-top:14px;"><strong>Es mantenen les condicions de quota actuals, a excepció dels dies extra de tecnificació addicionals a l'escola base.</strong> L'accés a la tecnificació i al programa de projecció i alt rendiment depèn de <strong>criteris tècnics</strong> (edat, maduresa, seguretat, aprofitament, objectius) i de les places disponibles per disciplina, i ha de ser confirmat per la direcció tècnica per a cada atleta.</p>
+
+  <!-- ============ 06 · COM CONFIRMAR LA PLAÇA ============ -->
+  <h2 id="s06"><span class="n">06</span>Com confirmar la plaça</h2>
+
+  <ol class="tl">
+    <li>
+      <div class="when">Abans del 9 d'agost</div>
+      <h3>Formalitza la matrícula</h3>
+      <p>Amb el pagament de la matrícula de 50&nbsp;€ assegureu la plaça i bloquegeu els preus de la temporada 25-26 de cara a la nova temporada.</p>
+      <a class="cta" href="https://app.cluber.es/legacy/clubes/662fc525765de012579250/inscripcion" target="_blank" rel="noopener">Formalitza la matrícula a Cluber <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </li>
+    <li>
+      <div class="when">En fer la matrícula</div>
+      <h3>Selecciona la categoria</h3>
+      <p>Tria la categoria per a la temporada (consulta les <a href="#annex">categories per any de naixement</a> a l'annex). La resta —dies d'entrenament, tecnificació i altres opcions— es concretarà a finals d'agost o durant el setembre a través d'Athria.</p>
+    </li>
+    <li>
+      <div class="when">Si valores tecnificació o alt rendiment</div>
+      <h3>Consulta-ho amb l'equip tècnic</h3>
+      <p>Si esteu valorant la tecnificació o el programa de projecció i alt rendiment, l'equip tècnic confirma l'encaix i la plaça disponible.</p>
+    </li>
+  </ol>
+
+  <div class="callout light big" style="margin-top:26px;">
+    <div class="ct">Gràcies</div>
+    <p>A Dinami-K tenim cura dels vostres fills i filles i construïm dia a dia un club del qual sentir-nos orgullosos. Us hi esperem.</p>
+  </div>
+
+  <div class="signoff">
+    <p class="greet">Una abraçada esportiva,</p>
+    <p class="team">L'equip de Dinami-<span>K</span></p>
+    <p class="meta" style="margin-top:10px;">Per a qualsevol dubte, estem a la vostra disposició · Escola d'Atletisme Dinami-K</p>
+  </div>
+
+  <!-- ============ ANNEX · CATEGORIES ============ -->
+  <section class="annex" id="annex">
+    <div class="ax-k">Annex · Temporada 2026/27</div>
+    <h2 class="ax-t">Categories i any de naixement</h2>
+    <p class="ax-d">A quina categoria correspon cada atleta segons l'any de naixement per a la temporada 2026/27.</p>
+    <div class="deftable cat">
+      <div class="row hd"><div class="k">Categoria</div><div class="v">Any de naixement</div></div>
+      <div class="row"><div class="k">Sub 6</div><div class="v">2022 — 2023</div></div>
+      <div class="row"><div class="k">Sub 8</div><div class="v">2020 — 2021</div></div>
+      <div class="row"><div class="k">Sub 10</div><div class="v">2018 — 2019</div></div>
+      <div class="row"><div class="k">Sub 12</div><div class="v">2016 — 2017</div></div>
+      <div class="row"><div class="k">Sub 14</div><div class="v">2014 — 2015</div></div>
+      <div class="row"><div class="k">Sub 16</div><div class="v">2012 — 2013</div></div>
+      <div class="row"><div class="k">Sub 18</div><div class="v">2010 — 2011</div></div>
+      <div class="row"><div class="k">Sub 20</div><div class="v">2008 — 2009</div></div>
+      <div class="row"><div class="k">Sub 23</div><div class="v">2005 — 2007</div></div>
+    </div>
+    <p class="footnote">La categoria ve determinada per l'any de naixement de l'atleta.</p>
+  </section>
+
+</main>
+
+<footer class="pagefoot">
+  Escola d'Atletisme Dinami-K · Temporada 2026/27
+</footer>
+
+
+<input type="checkbox" id="navtoggle" class="navtoggle" aria-label="Obre l'índex de seccions">
+<label for="navtoggle" class="navfab" title="Índex de seccions">
+  <svg class="bars" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  <svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</label>
+<nav class="navpanel" aria-label="Salta a una secció">
+  <div class="np-h">Salta a…</div>
+  <a href="#top"><span class="tn">↑</span>Inici</a>
+  <a href="#s01"><span class="tn">01</span>El recorregut de l'atleta</a>
+  <a href="#s02"><span class="tn">02</span>Tres programes i les quotes</a>
+  <a href="#s03"><span class="tn">03</span>Dubtes habituals, resolts</a>
+  <a href="#s04"><span class="tn">04</span>Cada camí compta</a>
+  <a href="#s05"><span class="tn">05</span>Reserva anticipada fins 9 agost</a>
+  <a href="#s06"><span class="tn">06</span>Com confirmar la plaça</a>
+  <a href="#annex"><span class="tn">＋</span>Categories i edats</a>
+</nav>
+<script>document.querySelectorAll(".navpanel a").forEach(function(a){a.addEventListener("click",function(){document.getElementById("navtoggle").checked=false;});});</script>
+</body>
+</html>

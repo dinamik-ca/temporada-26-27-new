@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<title>Coneix Dinami-K · Escola d'Atletisme · 2026/27</title>
+<meta name="description" content="Coneix l'Escola d'Atletisme Dinami-K de Vilanova i la Geltrú: qui som, què oferim a cada atleta i la seva família per a la temporada 2026/27 i com apuntar-s'hi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&family=Oswald:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#89CD24;--green-d:#4D7515;--green-ink:#3C5A12;
+    --black:#0A0A0A;--ink:#1c1c1c;--paper:#F4F4F0;--paper-2:#EAEAE4;
+    --grey:#6A6A6A;--grey-2:#9A9A96;--line:#dcdcd6;
+    --amber:#B8860B;--amber-bg:#F6ECCF;--green-bg:#EAF4D6;
+    --f-display:"Saira Condensed","Arial Narrow",sans-serif;
+    --f-meta:"Oswald",sans-serif;
+    --f-body:"Manrope",system-ui,sans-serif;
+    --wrap:820px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+  body{
+    margin:0;font-family:var(--f-body);color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Fluid typography ---------- */
+  h1,h2,h3{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.005em;color:var(--black);margin:0;}
+  h1{font-size:clamp(40px,10.5vw,64px);line-height:.9;}
+  h2{font-size:clamp(25px,6.4vw,34px);margin-top:44px;padding-top:18px;border-top:3px solid var(--black);}
+  h2 .n{color:transparent;-webkit-text-stroke:1.5px var(--green);margin-right:10px;}
+  h3{font-size:clamp(18px,4.6vw,21px);margin-top:22px;color:var(--green-ink);}
+  p{font-size:clamp(15px,4vw,16px);line-height:1.62;margin:12px 0;}
+  .lead{font-size:clamp(16.5px,4.6vw,18.5px);line-height:1.55;color:#2c2c2c;}
+  strong{color:var(--black);font-weight:700;}
+  ul,ol{margin:10px 0;padding-left:22px;}
+  li{font-size:clamp(14.5px,3.9vw,15.5px);line-height:1.55;margin:7px 0;}
+  a{color:var(--green-d);}
+  img{max-width:100%;}
+
+  .meta{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:var(--grey);margin:0;line-height:1.55;}
+  .footnote{font-family:var(--f-body);font-style:italic;font-size:13.5px;line-height:1.55;color:var(--grey);border-left:3px solid var(--green);padding-left:14px;margin:18px 0 0;}
+  .footnote strong{color:var(--ink);font-style:normal;font-weight:700;}
+  .kicker{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.28em;font-size:12px;color:var(--green-d);font-weight:600;margin:0;}
+
+  /* ---------- Layout shell ---------- */
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px 64px;}
+  .topbar{
+    background:var(--black);color:#fff;
+    position:sticky;top:0;z-index:20;
+  }
+  .topbar .inner{max-width:var(--wrap);margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .topbar img{height:26px;width:auto;display:block;}
+  .topbar span{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--grey-2);text-align:right;}
+
+  /* ---------- Cover ---------- */
+  .cover{padding:36px 0 26px;border-bottom:3px solid var(--green);margin-bottom:8px;}
+  .cover .bar{width:90px;height:6px;background:var(--green);margin:20px 0 16px;}
+  .cover h1{margin-top:6px;}
+  .cover .sub{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:clamp(13px,3.6vw,15px);color:var(--grey);margin-top:18px;line-height:1.5;}
+
+  /* ---------- Stat tiles ---------- */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0;}
+  .tile{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff;position:relative;overflow:hidden;}
+  .tile::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green);}
+  .tile .num{font-family:var(--f-display);font-style:italic;font-weight:900;font-size:clamp(34px,9vw,42px);line-height:.9;color:var(--black);}
+  .tile .lbl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:10.5px;color:var(--grey);margin-top:8px;line-height:1.35;}
+
+  /* ---------- Callouts ---------- */
+  .callout{background:var(--green-bg);border-left:5px solid var(--green);border-radius:0 12px 12px 0;padding:18px 22px;margin:22px 0;}
+  .callout.amber{background:var(--amber-bg);border-left-color:var(--amber);}
+  .callout.dark{background:var(--black);border-left-color:var(--green);color:#fff;}
+  .callout.dark p,.callout.dark strong{color:#fff;}
+  .callout .ct{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--green-d);margin-bottom:5px;}
+  .callout.amber .ct{color:var(--amber);} .callout.dark .ct{color:var(--green);}
+  .callout p{margin:2px 0;font-size:clamp(15px,4vw,16px);}
+  .callout.big p{font-family:var(--f-display);font-style:italic;font-weight:800;text-transform:uppercase;font-size:clamp(19px,5.4vw,23px);line-height:1.15;color:var(--black);}
+  .callout.dark.big p{color:#fff;}
+  .callout.light{background:#fff;border-left-width:4px;}
+  .callout.light .ct{color:var(--green-d);}
+  .callout.light.big p{color:var(--black);}
+
+  /* ---------- Area cards ---------- */
+  .cards3{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0;}
+  .card{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden;display:flex;flex-direction:column;}
+  .card .ch{padding:14px 16px 12px;border-bottom:1px solid var(--line);background:var(--paper);}
+  .card .ch .cn{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:9.5px;color:var(--green-d);font-weight:600;}
+  .card .ch .ct2{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(16px,4.4vw,18px);line-height:1;color:var(--black);margin-top:6px;}
+  .card .cb{padding:14px 16px 16px;}
+  .card .cb p{margin:0;font-size:14px;line-height:1.55;color:var(--grey);}
+
+  /* ---------- Front cards (axes / cura integral) ---------- */
+  .fronts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;}
+  .fronts.three{grid-template-columns:repeat(3,1fr);}
+  .front{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;display:flex;flex-direction:column;}
+  .front .fh{padding:14px 18px;background:var(--black);color:#fff;display:flex;align-items:center;gap:10px;}
+  .front.tech .fh{background:var(--green-d);}
+  .front .fh .fk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--green);}
+  .front.tech .fh .fk{color:#EAF4D6;}
+  .front .fh .fn{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(18px,4.8vw,20px);line-height:1;margin-top:2px;}
+  .front .fh .fic{margin-left:auto;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex:none;}
+  .front .fh .fic svg{width:20px;height:20px;stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.85;}
+  .front .fb{padding:16px 18px;flex:1;}
+  .front .fb p{margin:0;font-size:14.5px;line-height:1.55;}
+  .badge{display:inline-block;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:9px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--green-bg);color:var(--green-d);}
+
+  /* ---------- Timeline ---------- */
+  .tl{margin:20px 0 6px;padding:0;list-style:none;counter-reset:tl;}
+  .tl>li{position:relative;padding:2px 0 26px 52px;border-left:2px solid var(--line);margin-left:16px;}
+  .tl>li:last-child{border-left-color:transparent;padding-bottom:2px;}
+  .tl>li::before{counter-increment:tl;content:counter(tl);position:absolute;left:-19px;top:-4px;width:36px;height:36px;border-radius:50%;background:var(--green);color:var(--black);font-family:var(--f-display);font-style:italic;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;}
+  .tl .when{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:var(--green-d);font-weight:600;}
+  .tl h3{margin:3px 0 6px;font-size:clamp(18px,4.6vw,20px);color:var(--black);font-style:italic;}
+  .tl>li>p{margin:0;font-size:14.5px;line-height:1.55;}
+
+  .kit{margin:14px 0 4px;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden;}
+  .kit .kt{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:#fff;background:var(--green-d);font-weight:600;padding:9px 16px;}
+  .kit ul{margin:0;padding:14px 16px;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px 24px;}
+  .kit li{font-size:13px;line-height:1.35;color:var(--ink);padding-left:22px;position:relative;margin:0;}
+  .kit li::before{content:"";position:absolute;left:0;top:1px;width:14px;height:14px;border-radius:4px;background:var(--green-bg);}
+  .kit li::after{content:"";position:absolute;left:4px;top:4px;width:5px;height:8px;border:solid var(--green-d);border-width:0 2px 2px 0;transform:rotate(43deg);}
+
+  .sched{margin:10px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;}
+  .sched li{font-size:13px;line-height:1.35;color:var(--ink);padding-left:16px;position:relative;margin:0;}
+  .sched li::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:var(--green);}
+
+  /* ---------- Sport blocks + chips ---------- */
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;}
+  .chip{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:10px;font-weight:600;padding:5px 11px;border-radius:20px;background:var(--green-bg);color:var(--green-d);}
+  .chip.k{background:var(--black);color:#fff;}
+  .sblocks{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0;}
+  .sblock{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;}
+  .sblock .sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;padding:14px 18px;background:var(--paper);border-bottom:1px solid var(--line);}
+  .sblock .sh .sn{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(18px,4.8vw,20px);color:var(--black);line-height:1;}
+  .sblock .sh .stag{margin-left:auto;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:var(--green-d);font-weight:600;}
+  .sblock .sb{padding:16px 18px;}
+  .sblock .sb p{margin:0;font-size:14.5px;line-height:1.55;}
+
+  /* ---------- Athria screenshots showcase ---------- */
+  .capsec{margin-top:26px;}
+  .capsec .ck{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--green-d);font-weight:600;}
+  .capsec h3{margin:4px 0 2px;font-size:clamp(22px,6vw,26px);color:var(--black);font-style:italic;border:0;padding:0;margin-top:4px;}
+  .capsec p.d{margin:8px 0 0;font-size:clamp(15px,4vw,16px);line-height:1.55;color:#2c2c2c;}
+  .screen{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 10px 30px -16px rgba(10,10,10,.4);margin-top:16px;}
+  .screen .top{display:flex;align-items:center;gap:7px;padding:10px 14px;background:var(--paper);border-bottom:1px solid var(--line);}
+  .screen .top i{width:9px;height:9px;border-radius:50%;background:#d3d3cc;display:block;flex:none;}
+  .screen .top .u{margin-left:10px;font-family:var(--f-meta);letter-spacing:.02em;font-size:10.5px;color:var(--grey-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .screen .top .u b{color:var(--green-d);font-weight:600;}
+  .screen img{display:block;width:100%;height:auto;}
+  .showcase{display:grid;grid-template-columns:minmax(0,46%) 1fr;gap:22px;align-items:start;margin-top:16px;}
+  .showcase.phone{grid-template-columns:minmax(0,34%) 1fr;gap:24px;align-items:center;}
+  .showcase.phone .device{display:block;width:100%;height:auto;filter:drop-shadow(0 12px 28px rgba(10,10,10,.24));border-radius:12px;}
+  .stack{display:flex;flex-direction:column;gap:10px;}
+  .notes{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px;}
+  .notes.c3{grid-template-columns:repeat(3,1fr);}
+  .note{border:1px solid var(--line);border-left:4px solid var(--green);border-radius:0 10px 10px 0;padding:11px 14px;background:#fff;}
+  .note .nk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:9.5px;color:var(--green-d);font-weight:600;}
+  .note p{margin:4px 0 0;font-size:13px;line-height:1.5;color:var(--grey);}
+  .note p strong{color:var(--ink);}
+  .twoshots{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;}
+
+  /* ---------- Channels ---------- */
+  .chans{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0;}
+  .chan{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px;position:relative;overflow:hidden;}
+  .chan::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;}
+  .chan.p::after{background:var(--green);} .chan.s::after{background:var(--amber);} .chan.t::after{background:var(--grey-2);}
+  .chan .cn{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(15px,4.2vw,17px);color:var(--black);line-height:1;}
+  .chan .role{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:9.5px;color:var(--grey);margin:5px 0 9px;}
+  .chan p{margin:0;font-size:13px;line-height:1.5;color:var(--grey);}
+
+  /* ---------- Benefits ---------- */
+  .bens{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0;}
+  .ben{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px;display:flex;gap:13px;align-items:flex-start;}
+  .ben .bic{flex:none;width:32px;height:32px;border-radius:8px;background:var(--green-bg);display:flex;align-items:center;justify-content:center;}
+  .ben .bic svg{width:18px;height:18px;stroke:var(--green-d);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .ben h3{margin:0 0 3px;font-size:15px;color:var(--black);font-style:italic;line-height:1.1;}
+  .ben p{margin:0;font-size:13px;line-height:1.45;color:var(--grey);}
+
+  /* ---------- Sign-off ---------- */
+  .signoff{margin-top:36px;border-top:3px solid var(--green);padding-top:20px;}
+  .signoff .greet{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--grey);margin:0 0 4px;}
+  .signoff .team{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(24px,6.6vw,28px);color:var(--black);margin:0;}
+  .signoff .team span{color:var(--green-d);}
+
+  footer.pagefoot{
+    text-align:center;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;
+    font-size:10px;color:var(--grey-2);padding:28px 20px 40px;border-top:1px solid var(--line);margin-top:20px;
+  }
+
+  /* ---------- Athria phone mockups (self-contained, no images) ---------- */
+  .athsec{display:grid;grid-template-columns:minmax(0,290px) 1fr;gap:26px;align-items:start;margin-top:18px;}
+  .athsec.rev .phone{order:2;}
+  .athsec.rev{grid-template-columns:1fr minmax(0,290px);}
+  .phone{width:100%;max-width:290px;margin:0 auto;background:#0A0A0A;border-radius:38px;padding:8px;box-shadow:0 22px 44px -20px rgba(10,10,10,.55);}
+  .phone .scr{background:#F4F4F0;border-radius:31px;overflow:hidden;position:relative;}
+  .phone .nub{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:66px;height:5px;border-radius:3px;background:#c9c9c2;z-index:3;}
+  .amk{padding:28px 13px 15px;font-family:var(--f-body);color:#0A0A0A;font-size:12px;line-height:1.4;}
+  .amk .abr{display:flex;align-items:center;gap:7px;}
+  .amk .abr .dot{width:9px;height:9px;border-radius:50%;background:#0A0A0A;}
+  .amk .abr .nm{font-weight:800;font-size:15px;letter-spacing:-.01em;}
+  .amk .abr .v{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:8.5px;color:#9A9A96;font-weight:500;}
+  .amk .h{font-weight:800;font-size:21px;letter-spacing:-.015em;margin:13px 0 1px;}
+  .amk .d{color:#9A9A96;font-size:10.5px;margin:0;}
+  .amk .sec{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.11em;font-size:8.5px;color:#9A9A96;font-weight:600;margin:15px 0 7px;}
+  .amk .cw{background:#fff;border:1px solid #ececE6;border-radius:14px;padding:12px 13px;}
+  .amk .ch2{display:inline-block;font-size:9.5px;font-weight:700;padding:3px 8px;border-radius:20px;background:#EAEAE4;color:#555;}
+  .amk .ch2.bl{background:#E4ECF8;color:#2f5aa8;} .amk .ch2.am{background:#F6ECCF;color:#8a6712;}
+  .amk .ch2.gn{background:#EAF4D6;color:#4D7515;} .amk .ch2.gy{background:#EAEAE4;color:#555;}
+  .amk .arow{display:flex;align-items:center;gap:11px;}
+  .amk .av{width:44px;height:44px;border-radius:50%;border:2.5px solid #d64d4d;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none;}
+  .amk .av.g{border-color:#0A0A0A;background:#0A0A0A;color:#fff;}
+  .amk .an{font-weight:800;font-size:15px;line-height:1.1;}
+  .amk .am2{color:#9A9A96;font-size:10px;}
+  .amk .chv{margin-left:auto;color:#c4c4bd;font-size:18px;font-weight:400;}
+  .amk .st3{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;border-top:1px solid #ececE6;margin-top:11px;padding-top:11px;}
+  .amk .st3 .n{font-weight:800;font-size:19px;} .amk .st3 .l{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.05em;font-size:7.5px;color:#9A9A96;font-weight:600;margin-top:2px;}
+  .amk .mr{display:flex;align-items:center;gap:8px;padding:9px 0;border-top:1px solid #ececE6;}
+  .amk .mr:first-of-type{border-top:none;padding-top:2px;}
+  .amk .mr .ic{width:24px;height:24px;flex:none;color:#0A0A0A;display:flex;align-items:center;justify-content:center;}
+  .amk .mr .ic svg{width:20px;height:20px;stroke:#0A0A0A;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .amk .mr .nm2{font-weight:700;font-size:12px;flex:1;}
+  .amk .mr .pc{font-size:8.5px;font-weight:800;padding:2px 6px;border-radius:9px;background:#EAF4D6;color:#4D7515;}
+  .amk .mr .mk{font-weight:800;font-size:12.5px;}
+  .amk .mr .dt{color:#c4c4bd;font-size:9.5px;width:32px;text-align:right;flex:none;}
+  .amk .it{border-top:1px solid #f0f0ea;padding:11px 0;}
+  .amk .it:first-child{border-top:none;padding-top:1px;}
+  .amk .it .t{font-weight:800;font-size:12.5px;}
+  .amk .it .m{color:#9A9A96;font-size:10px;margin:3px 0 7px;}
+  .amk .tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .amk .tgl{display:flex;background:#EAEAE4;border-radius:20px;padding:3px;margin:11px 0 4px;}
+  .amk .tgl span{flex:1;text-align:center;font-size:10.5px;font-weight:700;padding:6px;border-radius:16px;color:#8a8a84;}
+  .amk .tgl span.on{background:#fff;color:#0A0A0A;box-shadow:0 1px 3px rgba(0,0,0,.08);}
+  .amk .fb{display:flex;align-items:center;gap:8px;padding:9px 0;border-top:1px solid #f0f0ea;}
+  .amk .fb:first-of-type{border-top:none;padding-top:2px;}
+  .amk .fb .fl{flex:1;font-weight:600;font-size:11.5px;}
+  .amk .sc{display:flex;gap:4px;} .amk .sc i{width:8px;height:8px;border-radius:50%;background:#e2e2db;} .amk .sc i.on{background:#89CD24;}
+  .amk .sc.am i.on{background:#E0A82E;}
+  .amk .lv{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.05em;font-size:8px;font-weight:700;color:#4D7515;width:52px;text-align:right;}
+  .amk .lv.am{color:#8a6712;}
+  .amk .qbox{background:#EAF4D6;border-radius:11px;padding:10px 12px;margin-top:11px;}
+  .amk .qbox .qk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:8px;font-weight:700;color:#4D7515;}
+  .amk .qbox p{margin:3px 0 0;font-size:10.5px;line-height:1.45;color:#333;}
+  .amk .car{display:flex;align-items:center;gap:10px;padding:11px 0;border-top:1px solid #f0f0ea;}
+  .amk .car:first-of-type{border-top:none;padding-top:2px;}
+  .amk .car .cav{width:34px;height:34px;border-radius:10px;background:#EAF4D6;color:#4D7515;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;flex:none;}
+  .amk .car .ci{flex:1;min-width:0;} .amk .car .ci .cn3{font-weight:700;font-size:11.5px;} .amk .car .ci .cm3{color:#9A9A96;font-size:9.5px;}
+  .amk .btn{font-size:9.5px;font-weight:800;padding:6px 11px;border-radius:20px;background:#89CD24;color:#0A0A0A;flex:none;}
+  .amk .btn.dis{background:#EAEAE4;color:#9A9A96;}
+  .amk .status{display:flex;gap:6px;margin:9px 0 2px;}
+  .amk .status .sp{flex:1;text-align:center;background:#fff;border:1px solid #ececE6;border-radius:10px;padding:8px 2px;}
+  .amk .status .sp .n{font-weight:800;font-size:16px;} .amk .status .sp .l{font-size:7.5px;color:#9A9A96;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.04em;font-weight:600;margin-top:1px;}
+  .amk .offer{width:100%;text-align:center;border:1.5px dashed #cfcfc8;border-radius:12px;padding:11px;font-weight:700;font-size:11px;color:#4D7515;margin-top:11px;}
+  .athcap{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.02em;font-size:10px;color:var(--grey-2);text-align:center;margin:9px 0 0;}
+  .athcap b{color:var(--green-d);font-weight:600;}
+
+  /* ---------- Athria: extra bits (payments, activity, wide app-window, chart) ---------- */
+  .amk .pc.am{background:#F6ECCF;color:#8a6712;}
+  .amk .pay{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;}
+  .amk .pay .pt{font-weight:700;font-size:12.5px;}
+  .amk .pay .pm{color:#9A9A96;font-size:10px;margin-top:2px;}
+  .amk .act{display:flex;gap:8px;padding:8px 0;border-top:1px solid #f0f0ea;align-items:flex-start;}
+  .amk .act:first-of-type{border-top:none;padding-top:2px;}
+  .amk .act .adot{width:7px;height:7px;border-radius:50%;margin-top:4px;flex:none;}
+  .amk .act .atx{flex:1;font-size:10.8px;line-height:1.35;}
+  .amk .act .atx b{font-weight:700;}
+  .amk .act .ad{color:#c4c4bd;font-size:9px;flex:none;}
+  .amk .occ{display:flex;gap:6px;margin:9px 0 6px;flex-wrap:wrap;}
+  .amk .occ b{width:26px;height:26px;border-radius:8px;background:#EAEAE4;color:#6a6a6a;display:flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700;flex:none;}
+  .amk .occ b.on{background:#EAF4D6;color:#4D7515;box-shadow:inset 0 0 0 1px #bcd98a;}
+  .amk .occ b.em{background:transparent;box-shadow:inset 0 0 0 1px #d4d4cd;color:#c4c4bd;border-style:dashed;}
+  .amk .conf{background:#EAF4D6;border-radius:11px;padding:9px;text-align:center;font-weight:700;font-size:11px;color:#4D7515;margin-top:8px;}
+  .amk .nav{display:flex;justify-content:space-around;border-top:1px solid #e6e6df;margin:14px -13px -15px;padding:11px 0 9px;background:#fff;}
+  .amk .nav .ni{font-size:8.5px;color:#9A9A96;text-align:center;font-weight:600;}
+  .amk .nav .ni.on{color:#0A0A0A;}
+
+  /* Wide "app window" screens (desktop-style Athria views) */
+  .awrap{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#F4F4F0;box-shadow:0 14px 36px -20px rgba(10,10,10,.4);margin-top:16px;}
+  .awrap .wtop{display:flex;align-items:center;gap:7px;padding:10px 15px;background:#fff;border-bottom:1px solid var(--line);}
+  .awrap .wtop i{width:9px;height:9px;border-radius:50%;background:#d3d3cc;display:block;flex:none;}
+  .awrap .wtop .u{margin-left:10px;font-family:var(--f-meta);font-size:10.5px;color:var(--grey-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .awrap .wtop .u b{color:var(--green-d);font-weight:600;}
+  .awk{padding:20px;font-family:var(--f-body);color:#0A0A0A;font-size:13px;}
+  .awk .ahead{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;}
+  .awk .ahead .av{width:52px;height:52px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:none;}
+  .awk .ahead .an{font-weight:800;font-size:19px;}
+  .awk .ahead .am{color:#9A9A96;font-size:11.5px;margin-top:1px;}
+  .awk .ahead .st{display:inline-flex;align-items:center;gap:5px;background:#EAF4D6;color:#3C7A2E;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;margin-top:6px;}
+  .awk .stat4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0;}
+  .awk .stat4 .c{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 14px;}
+  .awk .stat4 .c .l{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.06em;font-size:8.5px;color:var(--grey);font-weight:600;}
+  .awk .stat4 .c .n{font-weight:800;font-size:23px;margin-top:5px;line-height:1;}
+  .awk .stat4 .c .s{font-size:9.5px;color:var(--grey-2);margin-top:4px;}
+  .awk .tabs{display:flex;gap:18px;border-bottom:1px solid var(--line);margin:8px 0 14px;overflow-x:auto;}
+  .awk .tabs span{font-size:12px;color:var(--grey);padding:0 0 9px;white-space:nowrap;font-weight:600;}
+  .awk .tabs span.on{color:#0A0A0A;box-shadow:inset 0 -2px 0 #0A0A0A;}
+  .awk .lbl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:9px;color:var(--grey);font-weight:600;margin:2px 0 8px;}
+  .awk .provas{display:flex;gap:8px;overflow-x:auto;padding-bottom:5px;}
+  .awk .provas .p{flex:none;min-width:92px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;}
+  .awk .provas .p.on{background:#0A0A0A;color:#fff;border-color:#0A0A0A;}
+  .awk .provas .p .pl{font-family:var(--f-meta);text-transform:uppercase;font-size:8px;letter-spacing:.04em;color:var(--grey);font-weight:600;}
+  .awk .provas .p.on .pl{color:#cfcfc8;}
+  .awk .provas .p .pv{font-weight:800;font-size:16px;margin-top:3px;}
+  .awk .provas .p .pd{font-size:8px;color:var(--grey-2);margin-top:2px;}
+  .awk .provas .p.on .pd{color:#9a9a94;}
+  .awk .mret{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;margin:14px 0;}
+  .awk .mret .l{font-family:var(--f-meta);text-transform:uppercase;font-size:8.5px;letter-spacing:.05em;color:var(--grey);font-weight:600;}
+  .awk .mret .n{font-weight:800;font-size:20px;margin-top:4px;line-height:1;}
+  .awk .mret .n.gn{color:#3C7A2E;}
+  .awk .mret .s{font-size:9px;color:var(--grey-2);margin-top:3px;}
+  .awk .pill{display:inline-block;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:#EAF4D6;color:#3C7A2E;margin-left:5px;vertical-align:middle;}
+  .awk .chart{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;}
+  .awk .chart .chh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+  .awk .chart svg{width:100%;height:auto;display:block;}
+  .awk .seg{display:inline-flex;background:#EAEAE4;border-radius:20px;padding:3px;}
+  .awk .seg span{font-size:9.5px;font-weight:700;padding:5px 10px;border-radius:16px;color:#8a8a84;}
+  .awk .seg span.on{background:#3C7A2E;color:#fff;}
+  .awk .twocol{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;align-items:start;}
+  .awk .warn{background:#F6ECCF;border-radius:12px;padding:13px 15px;margin-bottom:14px;}
+  .awk .warn .wt{font-weight:800;font-size:13px;color:#8a6712;}
+  .awk .warn .wm{font-size:11.5px;color:#96741f;margin-top:3px;line-height:1.4;}
+  .awk .qbox2{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;}
+  .awk .confirm{display:flex;gap:10px;margin:12px 0 6px;}
+  .awk .confirm .b{flex:1;text-align:center;border:1px solid var(--line);background:#fff;border-radius:11px;padding:12px;font-weight:700;font-size:13px;}
+  .awk .prow{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid #eee;}
+  .awk .prow:first-of-type{border-top:none;}
+  .awk .prow .pn{flex:1;font-weight:700;font-size:13px;}
+  .awk .prow .pm{color:var(--grey);font-size:11px;font-variant-numeric:tabular-nums;}
+  .awk .drow{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px solid #eee;font-size:12.5px;}
+  .awk .drow:first-of-type{border-top:none;}
+  .awk .drow .k{color:var(--grey);} .awk .drow .v{font-weight:700;text-align:right;}
+  .awk .note2{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-top:12px;}
+  .awk .note2 .nt{font-weight:700;font-size:12px;margin-bottom:4px;}
+  .awk .note2 p{margin:0;font-size:12px;color:var(--grey);font-style:italic;line-height:1.5;}
+  .awk .cvrow{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:9px;}
+  .awk .cvrow .date{text-align:center;flex:none;width:42px;}
+  .awk .cvrow .date .dd{font-weight:800;font-size:19px;line-height:1;}
+  .awk .cvrow .date .dm{font-family:var(--f-meta);text-transform:uppercase;font-size:8.5px;color:var(--grey);font-weight:600;}
+  .awk .cvrow .cc{flex:1;min-width:0;}
+  .awk .cvrow .cc .ct{font-weight:800;font-size:14px;margin:4px 0 2px;}
+  .awk .cvrow .cc .cm{color:var(--grey);font-size:11px;}
+  .awk .cvrow .rt{text-align:right;flex:none;}
+  .awk .cvrow .rt .status{font-size:11px;font-weight:700;}
+  .awk .cvrow .rt .status.pend{color:#8a6712;} .awk .cvrow .rt .status.ok{color:#3C7A2E;} .awk .cvrow .rt .status.fin{color:var(--grey-2);}
+  .awk .btnk{display:inline-block;font-size:11px;font-weight:700;padding:7px 14px;border-radius:9px;background:#0A0A0A;color:#fff;margin-top:6px;}
+  .awk .btnk.ghost{background:#fff;color:#0A0A0A;border:1px solid var(--line);}
+  .awk .comm .ci{padding:9px 0;}
+  .awk .comm .ck2{display:flex;align-items:center;gap:7px;font-weight:700;font-size:12px;}
+  .awk .comm .ck2 .cd{width:8px;height:8px;border-radius:50%;flex:none;}
+  .awk .comm p{margin:4px 0 0;font-size:12px;line-height:1.5;color:#333;}
+
+  /* Desktop "Inici" dashboard (two columns) */
+  .awk .ttl{font-weight:800;font-size:26px;letter-spacing:-.015em;}
+  .awk .ttl+.dsub{color:#9A9A96;font-size:12.5px;margin:2px 0 16px;}
+  .awk .ch2{display:inline-block;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;background:#EAEAE4;color:#555;}
+  .awk .ch2.bl{background:#E4ECF8;color:#2f5aa8;} .awk .ch2.am{background:#F6ECCF;color:#8a6712;} .awk .ch2.gn{background:#EAF4D6;color:#3C7A2E;}
+  .dash{display:grid;grid-template-columns:1.45fr 1fr;gap:16px;align-items:start;}
+  .dcol{display:flex;flex-direction:column;gap:14px;}
+  .dcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 16px;}
+  .dcard .dl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:9px;color:var(--grey);font-weight:600;margin:0 0 10px;}
+  .dath{display:flex;align-items:center;gap:13px;}
+  .dath .av{width:46px;height:46px;border-radius:50%;border:2.5px solid #d64d4d;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none;}
+  .dath .an{font-weight:800;font-size:16px;display:inline;} .dath .amini{color:#9A9A96;font-size:11px;margin-left:5px;}
+  .dath .chv{margin-left:auto;color:#c4c4bd;font-size:18px;}
+  .dchips{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px;}
+  .dstat{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;border-top:1px solid #eee;margin-top:12px;padding-top:12px;}
+  .dstat .n{font-weight:800;font-size:22px;line-height:1;} .dstat .l{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.05em;font-size:8px;color:#9A9A96;font-weight:600;margin-top:4px;}
+  .dmr{display:flex;align-items:center;gap:9px;padding:9px 0;border-top:1px solid #eee;}
+  .dmr:first-of-type{border-top:none;}
+  .dmr .ic{width:22px;height:22px;flex:none;color:#0A0A0A;display:flex;align-items:center;justify-content:center;}
+  .dmr .ic svg{width:19px;height:19px;stroke:#0A0A0A;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .dmr .ic img{width:23px;height:23px;object-fit:contain;display:block;}
+  .dmr .ic img.lj{width:20px;height:20px;}
+  .dmr .nm{flex:1;font-weight:700;font-size:13px;}
+  .dmr .pc{font-size:8.5px;font-weight:800;padding:2px 6px;border-radius:9px;background:#EAF4D6;color:#3C7A2E;}
+  .dmr .pc.am{background:#F6ECCF;color:#8a6712;}
+  .dmr .mk{font-weight:800;font-size:13px;} .dmr .dt{color:#c4c4bd;font-size:9.5px;width:34px;text-align:right;flex:none;}
+  .dconv{padding:11px 0;border-top:1px solid #eee;}
+  .dconv:first-of-type{border-top:none;padding-top:1px;}
+  .dconv .t{font-weight:700;font-size:13px;} .dconv .m{color:#9A9A96;font-size:10.5px;margin:2px 0 6px;}
+  .dpay{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+  .dpay .pt{font-weight:700;font-size:14px;} .dpay .pm{color:#9A9A96;font-size:11px;margin-top:3px;}
+  .dlink{text-align:right;font-size:11px;color:#3C7A2E;font-weight:600;margin-top:10px;}
+  .dstep{display:flex;gap:10px;align-items:flex-start;padding:7px 0;}
+  .dstep .chk{width:20px;height:20px;border-radius:50%;background:#EAF4D6;color:#3C7A2E;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex:none;}
+  .dstep .t{font-weight:700;font-size:12.5px;text-decoration:line-through;color:#9A9A96;} .dstep .m{font-size:11px;color:#b0b0a8;}
+  .dact{display:flex;gap:9px;padding:9px 0;border-top:1px solid #eee;align-items:flex-start;}
+  .dact:first-of-type{border-top:none;padding-top:1px;}
+  .dact .adot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex:none;}
+  .dact .tx{flex:1;font-size:12px;line-height:1.4;} .dact .tx b{font-weight:700;}
+  .dact .ad{color:#c4c4bd;font-size:10px;flex:none;}
+  .dcal{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;}
+  .dcal .hd{font-family:var(--f-meta);text-transform:uppercase;font-size:9px;color:#b0b0a8;text-align:center;font-weight:600;padding:0 0 6px;}
+  .dcal .dy{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;color:#333;position:relative;border-radius:9px;}
+  .dcal .dy.today{background:#F6E9CC;font-weight:800;color:#0A0A0A;}
+  .dcal .dy .cd{width:5px;height:5px;border-radius:50%;margin-top:2px;}
+  .dcal .dy.empty{visibility:hidden;}
+
+  /* Feedback screen (pill selectors) */
+  .awk .fbadge{margin-left:auto;background:#E4ECF8;color:#2f5aa8;font-size:11px;font-weight:700;padding:4px 11px;border-radius:20px;flex:none;}
+  .awk .tglw{display:flex;background:#EAEAE4;border-radius:22px;padding:3px;max-width:320px;margin:16px 0 4px;}
+  .awk .tglw span{flex:1;text-align:center;font-size:12px;font-weight:700;padding:8px;border-radius:18px;color:#8a8a84;}
+  .awk .tglw span.on{background:#fff;color:#0A0A0A;box-shadow:0 1px 3px rgba(0,0,0,.08);}
+  .fbsl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.09em;font-size:9.5px;color:var(--grey);font-weight:600;margin:18px 0 4px;}
+  .fbgrid{display:grid;grid-template-columns:1fr 1fr;gap:2px 26px;}
+  .fbq{padding:11px 0;}
+  .fbq .q{font-weight:700;font-size:12.5px;margin-bottom:9px;line-height:1.3;min-height:2.5em;display:flex;align-items:flex-end;}
+  .fbopts{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;}
+  .fbopt{text-align:center;padding:8px 3px;border-radius:9px;border:1px solid #ececE6;background:#fff;color:#c0c0ba;font-weight:700;font-size:11.5px;}
+  .fbopt.on.molt{background:#EAF4D6;border-color:#bcd98a;color:#3C7A2E;}
+  .fbopt.on.avg{background:#F6ECCF;border-color:#e6cf8f;color:#8a6712;}
+  .fblg{display:flex;flex-wrap:wrap;gap:7px 16px;align-items:center;font-size:11px;color:var(--grey);margin-top:14px;padding-top:13px;border-top:1px solid #eee;}
+  .fblg .li{display:flex;align-items:center;gap:6px;}
+  .fblg .dot{width:9px;height:9px;border-radius:50%;}
+  .fbcomm{margin-top:16px;}
+  .fbcomm .ci{padding:10px 0 0;}
+  .fbcomm .ck2{display:flex;align-items:center;gap:8px;font-weight:700;font-size:13px;}
+  .fbcomm .ck2 .cd{width:9px;height:9px;border-radius:50%;flex:none;}
+  .fbcomm p{margin:5px 0 0;font-size:13px;line-height:1.55;color:#333;}
+
+  /* ---------- "One more thing" · nova equipació ---------- */
+  .omt{background:var(--black);color:#fff;border-radius:22px;padding:clamp(26px,5.5vw,48px);margin:38px 0;position:relative;overflow:hidden;}
+  .omt-glow{position:absolute;top:-45%;right:-18%;width:65%;height:130%;background:radial-gradient(circle,rgba(137,205,36,.30),transparent 62%);pointer-events:none;}
+  .omt-glow.b{top:auto;bottom:-55%;right:auto;left:-20%;width:55%;background:radial-gradient(circle,rgba(137,205,36,.14),transparent 60%);}
+  .omt-in{position:relative;z-index:1;}
+  .omt-k{font-family:var(--f-meta);letter-spacing:.28em;text-transform:uppercase;font-size:12px;color:var(--green);margin:0 0 10px;}
+  .omt-h{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;color:#fff;font-size:clamp(30px,7vw,48px);line-height:.94;letter-spacing:-.01em;margin:0;}
+  .omt-lead{color:#d6d6d1;font-size:clamp(15px,4vw,17px);line-height:1.6;margin:15px 0 24px;max-width:62ch;}
+  .omt-lead strong{color:#fff;font-weight:700;}
+  .omt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .kit-card{background:#141414;border:1px solid #2b2b2b;border-radius:14px;overflow:hidden;margin:0;}
+  .kit-card .imgwrap{aspect-ratio:4/3;background:linear-gradient(155deg,#89CD24,#1a1a1a 72%);position:relative;}
+  .kit-card .imgwrap img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;display:block;}
+  .kit-card figcaption{padding:12px 14px;display:flex;flex-direction:column;gap:2px;}
+  .kit-card .s{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:9.5px;color:var(--green);font-weight:600;}
+  .kit-card .t{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:17px;color:#fff;line-height:1;}
+  .omt-foot{color:#bdbdb7;font-size:13.5px;line-height:1.55;margin:22px 0 0;}
+  .omt-foot strong{color:var(--green);font-weight:700;}
+  .omt-badge{display:inline-block;margin-top:14px;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:600;color:var(--black);background:var(--green);padding:7px 14px;border-radius:20px;}
+  .omt-hint{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.12em;font-size:9.5px;color:var(--green);margin:14px 0 0;display:flex;align-items:center;gap:7px;}
+  .kit-card .imgwrap{cursor:zoom-in;}
+  .kit-card .imgwrap img{transition:transform .35s ease;}
+  .kit-card:hover .imgwrap img{transform:scale(1.05);}
+  .lb{position:fixed;inset:0;background:rgba(8,8,8,.93);display:none;align-items:center;justify-content:center;z-index:60;padding:20px;cursor:zoom-out;}
+  .lb.open{display:flex;}
+  .lb img{max-width:min(1100px,96vw);max-height:92vh;width:auto;height:auto;border-radius:12px;box-shadow:0 24px 70px rgba(0,0,0,.6);}
+  .lb .lbx{position:absolute;top:12px;right:22px;color:#fff;font-size:32px;line-height:1;font-weight:300;cursor:pointer;}
+
+  /* ---------- Index (TOC) + floating section nav ---------- */
+  h2{scroll-margin-top:68px;}
+  .toc{border:1px solid var(--line);border-radius:16px;background:#fff;padding:20px 22px 22px;margin:26px 0;}
+  .toc-h{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--green-d);font-weight:600;}
+  .toc-hint{font-size:12.5px;color:var(--grey);margin:3px 0 15px;}
+  .toc-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;}
+  .toc-list a{display:flex;align-items:center;gap:13px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none;cursor:pointer;transition:transform .14s,box-shadow .14s,border-color .14s,background .14s;}
+  .toc-list a:hover{background:#fff;border-color:var(--green);box-shadow:0 8px 20px -12px rgba(10,10,10,.28);transform:translateY(-2px);}
+  .toc-list a:focus-visible{outline:3px solid var(--green);outline-offset:2px;}
+  .toc-list .tn{width:34px;height:34px;border-radius:9px;background:var(--green-bg);color:var(--green-d);display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-style:italic;font-weight:900;font-size:16px;flex:none;transition:background .14s,color .14s;}
+  .toc-list a:hover .tn{background:var(--green);color:var(--black);}
+  .toc-list .tt{flex:1;font-weight:600;font-size:14px;line-height:1.15;}
+  .toc-list .arw{margin-left:auto;flex:none;color:var(--grey-2);transition:transform .14s,color .14s;}
+  .toc-list a:hover .arw{color:var(--green-d);transform:translateX(3px);}
+  .toc-list .arw svg{width:16px;height:16px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;display:block;}
+
+  .navtoggle{position:fixed;width:1px;height:1px;opacity:0;pointer-events:none;}
+  .navfab{position:fixed;right:20px;bottom:20px;width:52px;height:52px;border-radius:50%;background:var(--black);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(10,10,10,.55);cursor:pointer;z-index:50;transition:background .15s,transform .15s;}
+  .navfab:hover{transform:translateY(-2px);}
+  .navfab svg{width:22px;height:22px;stroke:#fff;stroke-width:2.2;fill:none;stroke-linecap:round;}
+  .navfab .x{display:none;}
+  .navtoggle:checked ~ .navfab{background:var(--green-d);}
+  .navtoggle:checked ~ .navfab .bars{display:none;} .navtoggle:checked ~ .navfab .x{display:block;}
+  .navtoggle:focus-visible ~ .navfab{outline:3px solid var(--green);outline-offset:2px;}
+  .navpanel{position:fixed;right:20px;bottom:82px;width:260px;max-width:calc(100vw - 40px);background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 46px -12px rgba(10,10,10,.4);padding:8px;z-index:49;opacity:0;transform:translateY(12px) scale(.98);transform-origin:bottom right;pointer-events:none;transition:opacity .18s ease,transform .18s ease;}
+  .navtoggle:checked ~ .navpanel{opacity:1;transform:none;pointer-events:auto;}
+  .navpanel .np-h{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--grey);font-weight:600;padding:9px 11px 7px;}
+  .navpanel a{display:flex;gap:10px;align-items:baseline;padding:9px 11px;border-radius:9px;color:var(--ink);text-decoration:none;font-size:13.5px;}
+  .navpanel a .tn{font-family:var(--f-display);font-style:italic;font-weight:900;color:var(--green-d);font-size:13px;width:20px;flex:none;}
+  .navpanel a:hover{background:var(--paper);}
+  .cta{display:inline-flex;align-items:center;gap:9px;margin-top:13px;padding:12px 20px;border-radius:12px;background:var(--green);color:var(--black);font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;font-weight:700;text-decoration:none;transition:transform .14s,box-shadow .14s,background .14s,color .14s;}
+  .cta:hover{background:var(--green-d);color:#fff;transform:translateY(-2px);box-shadow:0 12px 26px -14px rgba(77,117,21,.6);}
+  .cta svg{width:16px;height:16px;stroke:currentColor;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+
+  /* ---------- Mobile reflow ---------- */
+  @media (max-width:680px){
+    .stats{grid-template-columns:1fr;gap:10px;}
+    .tile{display:flex;align-items:center;gap:16px;}
+    .tile .num{font-size:40px;}
+    .tile .lbl{margin-top:0;}
+    .cards3,.fronts,.fronts.three,.bens,.chans,.twoshots,.notes,.notes.c3{grid-template-columns:1fr;}
+    .kit ul,.sched{grid-template-columns:1fr;}
+    .showcase,.showcase.phone{grid-template-columns:1fr;gap:14px;}
+    .showcase.phone .device{max-width:280px;margin:0 auto;}
+    .athsec,.athsec.rev{grid-template-columns:1fr;gap:18px;}
+    .athsec.rev .phone{order:0;}
+    .awk{padding:14px;}
+    .awk .stat4,.awk .mret{grid-template-columns:repeat(2,1fr);}
+    .awk .twocol,.dash,.fbgrid{grid-template-columns:1fr;}
+    .fbq .q{min-height:0;}
+    .toc-list{grid-template-columns:1fr;}
+    .omt-grid{grid-template-columns:1fr;}
+    .awk .cvrow{flex-wrap:wrap;}
+    .awk .cvrow .rt{width:100%;text-align:left;margin-left:56px;}
+    .tl>li{padding-left:46px;margin-left:14px;}
+  }
+  @media (max-width:400px){
+    .topbar span{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar" id="top">
+  <div class="inner">
+    <img src="assets/lockup_light.png" alt="Dinami-K · Club Atletisme Vilanova i la Geltrú">
+    <span>Millores · Temporada 2026/27</span>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="cover">
+    <p class="kicker">Escola d'Atletisme · Vilanova i la Geltrú</p>
+    <div class="bar"></div>
+    <h1>Creix amb l'atletisme a Dinami-K</h1>
+    <p class="sub">Un club per descobrir, gaudir i progressar en l'atletisme · Temporada 2026/27</p>
+  </section>
+
+  <p class="lead">Us plantegeu l'atletisme per al vostre fill o filla? Benvinguts a Dinami-K. Aquí teniu qui som i què oferim a cada atleta i la seva família.</p>
+
+  <p>Som l'<strong>Escola d'Atletisme Dinami-K</strong>, un club de Vilanova i la Geltrú on atletes de totes les edats —de Sub 6 a Sub 23— aprenen, s'entrenen i competeixen en un entorn proper i professional.</p>
+
+  <p>A Dinami-K acompanyem cada atleta amb <strong>oportunitats de tecnificació i especialització</strong>, un seguiment esportiu proper, una comunicació ordenada i una experiència de competicions ben organitzada.</p>
+
+  <p>Ho fem sobre <strong>tres eixos complementaris</strong>: una estructura esportiva amb oportunitats de progressió, una relació propera i estructurada amb el club i una <strong>plataforma tecnològica</strong> que centralitza la informació i fa més senzill el dia a dia.</p>
+
+  <p>Més enllà de les eines, us oferim <strong>una manera clara, propera i completa d'acompanyar el desenvolupament de cada atleta.</strong></p>
+
+  <div class="stats">
+    <div class="tile"><div class="num">4</div><div class="lbl">Àrees de treball del club</div></div>
+    <div class="tile"><div class="num">3</div><div class="lbl">Eixos: model esportiu, acompanyament i tecnologia</div></div>
+    <div class="tile"><div class="num">1</div><div class="lbl">L'atleta, sempre al centre</div></div>
+  </div>
+
+      <nav class="toc" aria-label="Contingut del document">
+    <div class="toc-h">Contingut</div>
+    <p class="toc-hint">Toca una secció per anar-hi directament.</p>
+    <ol class="toc-list">
+      <li><a href="#s01"><span class="tn">01</span><span class="tt">Què oferim</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s02"><span class="tn">02</span><span class="tt">Els tres eixos</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s03"><span class="tn">03</span><span class="tt">Més oportunitats esportives</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s04"><span class="tn">04</span><span class="tt">Us acompanyem tot el curs</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s05"><span class="tn">05</span><span class="tt">Athria: el club en un lloc</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s06"><span class="tn">06</span><span class="tt">Què hi guanyeu</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s07"><span class="tn">07</span><span class="tt">Imatge i equipació</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li><a href="#s08"><span class="tn">08</span><span class="tt">Cura integral de l'atleta</span><span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+    </ol>
+  </nav>
+
+  <!-- ============ 01 · QUÈ REFORCEM ============ -->
+  <h2 id="s01"><span class="n">01</span>Què oferim</h2>
+  <p>El nostre treball se centra en <strong>quatre àrees fonamentals</strong> del desenvolupament esportiu i de l'experiència de les famílies.</p>
+  <div class="cards3">
+    <div class="card">
+      <div class="ch"><div class="cn">Àrea 1</div><div class="ct2">Desenvolupament i tecnificació</div></div>
+      <div class="cb"><p>Per ampliar les oportunitats de treball específic i acompanyar cada atleta segons la seva edat, evolució, interessos i objectius.</p></div>
+    </div>
+    <div class="card">
+      <div class="ch"><div class="cn">Àrea 2</div><div class="ct2">Seguiment de l'atleta</div></div>
+      <div class="cb"><p>Perquè cada família pugui comprendre millor la seva evolució, la feina feta i els seus pròxims objectius.</p></div>
+    </div>
+    <div class="card">
+      <div class="ch"><div class="cn">Àrea 3</div><div class="ct2">Comunicació i organització</div></div>
+      <div class="cb"><p>Perquè la informació estigui centralitzada, sigui més clara i arribi en el moment adequat.</p></div>
+    </div>
+    <div class="card">
+      <div class="ch"><div class="cn">Àrea 4</div><div class="ct2">Experiència a les competicions</div></div>
+      <div class="cb"><p>Per facilitar la convocatòria, la inscripció, la preparació i l'acompanyament de cada atleta.</p></div>
+    </div>
+  </div>
+  <div class="callout">
+    <div class="ct">Un mateix objectiu</div>
+    <p>Totes les millores d'aquest document responen a un mateix objectiu: oferir <strong>una experiència més clara, propera i completa</strong> als atletes i a les seves famílies.</p>
+  </div>
+
+  <!-- ============ 02 · TRES EIXOS ============ -->
+  <h2 id="s02"><span class="n">02</span>Com ho abordem: tres eixos</h2>
+  <p>Treballem de manera coordinada el <strong>model esportiu</strong>, l'<strong>acompanyament</strong> que oferim com a club i l'<strong>eina tecnològica</strong> que ens permet gestionar-ho de manera ordenada i sostenible.</p>
+  <div class="fronts three">
+    <div class="front tech">
+      <div class="fh"><div><div class="fk">Eix 1</div><div class="fn">Model esportiu</div></div><div class="fic"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div></div>
+      <div class="fb"><p>Més oportunitats de tecnificació, especialització i progressió adaptades a cada etapa de l'atleta.</p></div>
+    </div>
+    <div class="front">
+      <div class="fh"><div><div class="fk">Eix 2</div><div class="fn">Acompanyament del club</div></div><div class="fic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div></div>
+      <div class="fb"><p>Moments de trobada per informar, resoldre dubtes, explicar la feina de cada categoria i compartir l'evolució de l'atleta.</p></div>
+    </div>
+    <div class="front">
+      <div class="fh"><div><div class="fk">Eix 3</div><div class="fn">Nova plataforma: Athria</div></div><div class="fic"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div></div>
+      <div class="fb"><p>Un sistema digital que centralitza la comunicació, el seguiment, les competicions i l'organització del dia a dia.</p></div>
+    </div>
+  </div>
+  <div class="callout big light">
+    <div class="ct">La idea</div>
+    <p>Més oportunitats per progressar, més acompanyament i tota la informació en un únic lloc.</p>
+  </div>
+
+  <!-- ============ 03 · MÉS OPORTUNITATS ESPORTIVES ============ -->
+  <h2 id="s03"><span class="n">03</span>Més oportunitats per créixer esportivament</h2>
+  <p>A Dinami-K el treball tècnic es treballa <strong>amb profunditat a cada categoria de l'escola</strong>, adaptat a cada edat i moment esportiu. A més, oferim <strong>possibilitats de treball específic</strong> perquè cada atleta pugui descobrir noves disciplines, aprofundir en la seva tècnica i progressar quan estigui preparat.</p>
+  <div class="sblocks">
+    <div class="sblock">
+      <div class="sh"><div class="sn">Tecnificació des de Sub10</div></div>
+      <div class="sb">
+        <p>Incorporem sessions addicionals per aprofundir en el treball tècnic de salts, velocitat, tanques i llançaments, més enllà de l'entrenament base de cada categoria.</p>
+        <div class="chips"><span class="chip">Llançaments</span><span class="chip">Salts</span><span class="chip">Velocitat</span><span class="chip">Tanques</span></div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sh"><div class="sn">Perxa: iniciació i progressió</div></div>
+      <div class="sb">
+        <p>Obrim espais específics perquè els atletes puguin descobrir la perxa i continuar progressant-hi amb un treball adaptat al seu nivell i experiència.</p>
+        <div class="chips"><span class="chip">Iniciació · des de Sub10</span><span class="chip k">Perxa avançada · des de Sub12</span></div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sh"><div class="sn">Reforç des de Sub14</div><div class="stag">Alçada i llançaments</div></div>
+      <div class="sb">
+        <p>Reforçem el treball específic de salt d'alçada i llançaments per donar més continuïtat al desenvolupament tècnic dels atletes que entren en una etapa de major especialització.</p>
+      </div>
+    </div>
+  </div>
+  <div class="callout big light">
+    <div class="ct">Un model progressiu</div>
+    <p>Més opcions per descobrir. Més treball específic per progressar.</p>
+  </div>
+  <p class="footnote">La tecnificació ja es treballa a fons a <strong>cada categoria</strong>; aquestes àrees són una <strong>opció addicional</strong> que l'equip tècnic concreta segons l'edat, els objectius i les places. Horaris i condicions, al document d'horaris i a la nova estructura de quotes.</p>
+
+  <!-- ============ 04 · ACOMPANYAMENT ============ -->
+  <h2 id="s04"><span class="n">04</span>Us acompanyem durant tot el curs</h2>
+  <p>Establim diferents moments de trobada amb les famílies per explicar com funciona el club, compartir la feina de cada categoria i fer visible l'evolució de l'atleta.</p>
+  <ol class="tl">
+    <li>
+      <div class="when">A l'inici de l'activitat</div>
+      <h3>Reunió i kit de benvinguda</h3>
+      <p>Rebrem les famílies i us facilitarem un <strong>kit de benvinguda</strong> amb la informació essencial per comprendre el funcionament del club des del primer moment.</p>
+      <div class="kit">
+        <div class="kt">El kit incorporarà, de manera esquemàtica</div>
+        <ul>
+          <li>Funcionament general del club</li>
+          <li>Calendari, grups i horaris</li>
+          <li>Responsables i contactes</li>
+          <li>Model i canals de comunicació</li>
+          <li>Ús inicial d'Athria</li>
+          <li>Funcionament bàsic de les competicions</li>
+          <li>Equipació i material necessari</li>
+          <li>Llicències, inscripcions i pagaments</li>
+          <li>Normes bàsiques de funcionament i convivència</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="when">Amb els grups en funcionament</div>
+      <h3>Reunió per categories</h3>
+      <p>La <strong>direcció tècnica</strong> explicarà a les famílies els objectius, la metodologia de treball i l'enfocament esportiu de cada categoria. L'acompanyament s'adaptarà a cada etapa: a la <strong>iniciació</strong> es reforçarà l'orientació a les famílies i la comprensió de les competicions; a les <strong>categories superiors</strong>, el seguiment tècnic, els objectius esportius i l'autonomia progressiva de l'atleta.</p>
+    </li>
+    <li>
+      <div class="when">A mitja temporada</div>
+      <h3>Retorn del progrés</h3>
+      <p>Cada família rebrà un <strong>retorn estructurat</strong> del progrés de l'atleta: feina feta, evolució observada i objectius per a la segona part del curs. Quan calgui, es podrà complementar amb una reunió individual amb l'equip tècnic.</p>
+    </li>
+    <li>
+      <div class="when">Abans de les competicions</div>
+      <h3>Preparació de les competicions</h3>
+      <p>Dedicarem un espai específic a explicar com funcionen les competicions i com acompanya el club els atletes, amb una atenció especial a les famílies que viuen aquesta experiència per primera vegada.</p>
+      <ul class="sched">
+        <li>Com es planifica la participació de l'atleta</li>
+        <li>Com es rep una convocatòria</li>
+        <li>Com es confirma la participació a Athria</li>
+        <li>Quina informació trobarà la família</li>
+        <li>Com s'organitza l'acompanyament tècnic</li>
+        <li>Què cal saber abans del dia de competició</li>
+      </ul>
+    </li>
+  </ol>
+
+  <!-- ============ 05 · ATHRIA ============ -->
+  <h2 id="s05"><span class="n">05</span>Athria: tot el club en un únic lloc</h2>
+  <p>Athria és la <strong>nova eina de comunicació i gestió</strong> de Dinami-K. Cada família hi troba ordenada i sempre disponible la informació del seu atleta. Aquestes són <strong>les pantalles principals</strong> i què hi trobareu a cadascuna.</p>
+
+    <!-- ===== Inici / panell família (desktop) ===== -->
+  <div class="capsec"><span class="ck">Athria · Inici</span><h3>El panell de la família</h3><p class="d">En entrar, cada família veu d'un cop d'ull tot el que l'afecta: el seu atleta i les seves marques, les convocatòries, el calendari, l'estat dels pagaments i l'activitat més recent del club.</p></div>
+  <div class="awrap">
+    <div class="wtop"><i></i><i></i><i></i><span class="u"><b>athria.app</b>/inici</span></div>
+    <div class="awk">
+      <div class="ttl">Hola, Marta</div>
+      <div class="dsub">Dilluns 20 de juliol, 2026</div>
+      <div class="dash">
+        <div class="dcol">
+          <div class="dcard">
+            <div class="dl">Els meus atletes</div>
+            <div class="dath"><div class="av">EB</div><div><div><span class="an">Èric Bonet Prat</span><span class="amini">11 anys</span></div><div class="dchips"><span class="ch2">Sub 12</span><span class="ch2 bl">2025-26</span><span class="ch2 am">Sub12 · Dimarts i Dijous</span></div></div><span class="chv">›</span></div>
+            <div class="dstat"><div><div class="n">24</div><div class="l">Competicions</div></div><div><div class="n">39</div><div class="l">Proves</div></div><div><div class="n">78%</div><div class="l">Assistència</div></div></div>
+            <div class="dl" style="margin:15px 0 6px;">Millors marques</div>
+            <div class="dmr"><div class="ic"><img class="lj" src="data:image/png;base64,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" alt=""></div><div class="nm">Longitud</div><span class="pc">P90</span><span class="mk">4,05</span><span class="dt">26/06</span></div>
+            <div class="dmr"><div class="ic"><img src="data:image/png;base64,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" alt=""></div><div class="nm">4×60 m</div><span class="pc">P85</span><span class="mk">35.82</span><span class="dt">25/04</span></div>
+            <div class="dmr"><div class="ic"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAABACAYAAACOcP4eAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAABgAAAAAQAAAGAAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAC2gAwAEAAAAAQAAAEAAAAAA+9huXAAAAAlwSFlzAAAOxAAADsQBlSsOGwAACutJREFUaAXtmguMVFcZx3funcfOzot9v5+8JMuSIsqjYiQSeaRBmoYlqLUSGpegJNDWtCmtFptoTKuxUWKLRUOh0BawxLZJ05oWA4giD0FeIhSWstBddt1ll33Pzoy/b7J3Mo87M3dnZjcx8SYn98x5/L//+c53vvOdc0fNmuBnyZIljjt37sw1m81LLBbL7NzcXF9NTU1Xe3u7b4KpGBOXl5c332q1vqcoSh89AiaTKaCSt9vtuwoKCsooMxlDmqBWxcXFDWj2L4gTjQaiE8TfdLlcBRNEJ7mYrVu3KhDehmbvRpPVfqP9gNvtXsPv7OSIE9CivLw8X1XVI4jyk2K0rJVlZ2e/Sj6XlPBREtZmqHJgYMDu9/tzgEtos7QppI2aTOyEkM7JyekfXXyi6bgPs9FC5UjcBqMVqZJWp0yZ4q6vr8gLYK/JhNy8ebMLF3cCm+6J15ZB+WjzIfX98dpo5QmnS2sU9jZNnjy5sK2tbRNTvkbJUiwm1XQeYUetVuWvBQUlp65cuXJv6tSpLvzuF4eGhuaqqslvtWYfQ4tt3d3dr3i93i+DZw7DzGIwWXiP7eBs6enp6QyvSys/ffp0l8flasILnBf/ClhEosxL3SX88E6Px7OF9FPM4g9WVf0Ewl0ul+PJsrKyL2VnW3fzu1swJJHvcDgcL1RUVOQZJZhU07NmzXI0NzevHBwc3ISW5gYCwjX5w3R3QegyGjxJv2q0vowB7WEHfAEMU19f31RBgfDZ1tbWm2TT3xEXLVpkRsADNpvtkPhQQCOSoqr3mM4Loik9zWvtqb8KxgHafCbtmI2T+ONlbN0Z9ccKW+oc2aEgO6wJ194IHsSf7mFLvn/58uW26urqWgb3MBrbAaEzJsUUnHqtPRi37HbbQfqJZwgOnIF0Op05zxUVFRVTZuiR2YnXUAh/AQ220yBCswgdhtSR/Pz8B9nhQguJwVWQfkbdcafTuR1b/gnb8c8heoCyw5S96nDY94InXiGEKbPHDBwsLS2tpjyGkMjAzqeAtxr8l8A6BM4vsYCYGbIgZH04OGRlgZ2YNGnSWonQqAs9AOYC+Fj4jOAIhtBkM4Q+ZCHu5P0xGF0kH+VCPCL2wM5Po4jF4kJZqNNlKwfzV8g8CW4v/UIDlTz13woRGM2YAJgB0EVFMfnoeBZij86bN88d3ZDfZuq+BhFZRCHgeHmbzfIxs/h1TOv3CI+IQcDoRtZVSPaFk4zGGiX9COUxj2natLICCSMbGhrixgGMeCpafJveSQlDqpX2S2lrXbt2bTazuZGyT430FaIMxk/7G8zcK+LNYhgbKUBjLgDWAzaUTDBtutDu89inXcOWRQXGV9DuYcpk2w4NfJTkIHWX6fcmC3wTClzQ0FCVm2gxathx3wDNAvRv4cL08hAeZDa2IbRCD6yurKwKYm/Rrg28f5PfK2uKAX1+zpw5OWmRjBKYzUJ5XGFh6RHVykRjeKGDLOD7ovpH/Ny3b5+K2yzNNMkIIWi5BK0c18jFe0P4tMuVszKic4Z+hPytQTybRVHmD/h8cxK1Z7rv4YHez3e4zzqdnmpCADdbeb7J5Pf4/SYXs+DFDM5jDp8QIgwmwspEXR6CdgIUWjh6eUiJr26D/GcyAJJXzCU8UX+PGTvCzG0uLc2fgXlYMkEwBiNoGmbzMT2iqZbJQBhADwv2I3GFLMJpEvfECE+1ANAipv29VAkm6zc6gC4G8D6hQFNVcXGdHIpT5av1swO2VsCTEUi3fnQAnQzgXWSuq6ysTPlexMyp5D42lgNs8wPxiIlALWHPI6Q+sXHSVbzKGbOq3qLeG69/dLlg0a9l0iR3cAuPia7okOhxQPib+OjFFqv1nNc7VOP1+vAKJi8n6V7ItZPvJHVAsJN012LJ6lYUWzf5HiK6/hUrVgzv3r07j6ux+/EoK0nL6VtkZCMRTHbWmSGCCxYssMuRJ0lnGxtLI6R8XGfJLnbYZrP+0ZZt20FMvTAEZjAjsrgTqSAu+TbHMInfb9A17qaF3EB+vntulnTEZr4DATmF3Ob9J7zE00R782QgUYOwULcY8IjDAWA3cIXfNchVt9nChQtzkfkwg3/SYbe/gVIkeoy43IHbjYYqgriSkpJ6yMbYJ8QkNP2nxLYArZCtVlYyHmQGdRGhJaRvsWAe02WTpJA4uhBNfx9Z58AZgcsNZL6FzGew4efAfZuya9SfJoZZFoRDc0m9AWASwLfarNZ3af+iqir/oXPIg1Dfhiv8EQWG1whXEUUeT856i8V8CayISE+wwQwg67VF9fVOuQkIPy1lSdiH5kIEwskYzSOgE9LBUzZ94j5iaqybcq4THpdZpGGEmfE7SFbeFrP5pAxMF0yAmPIfokk5EqVKXk4ev4my/5A8Keeqt5bD7LO0u0xFjLsT2TIQTkNPocTruLgjhYWFzhCITkZA62RBsqBep/P1MWq/jz67GhsbIy4PhWxlZUEZStlgsajXkRvjGYQss3TB7XZuFO8lix/Z5yB9VA4bOlxD11MBrrqu0eAagnbNrq31NN+9O5sLlqUjIyNf9ft99X5/QIJyPQwpE1uO2G45pFZBdtXw0NAjIz7fTPpGDAiyWRC7yqn912Uuz55/3brV2dPTK0crOeIJXlxh1CV+GhvrrczCTAhsZCW/Iwsy2owQ9Cn1coqXNVKJy3oKQpdoF+GyqA7aLFq/QvtnanWuD6qqqnLBk/vBI/E0nZhxVK1Mv8QAuKhvYEa/A/gfmMVRCGzQ7iNwV2vMStAjRKwPGaiFbZy2z9bW1lYDHTEzmqiMk9aAtbcMgmTVfssb0qtFU2SDpIUsLrJVbpRqSkpqKNclS3nwMUI6rbh1//79srAkhT8hWyRGGTBbLO+wUbzEmvl7b2+/mEvaT1qk9aT7fL4sTKaDBSwXjr0swA8gLCf3jD0JpyoVKSzEP7Nw17Fgf0t/8ceGd0mj8jJOmrvmdvx9C+GmEE4LX9aD3kDSAtUDjCrTFRrVZsw/x5t0qqaRsN94k/6f1PSYp95Ih3HRNDGLTK+WjPAYU5txIU2MImahpTERMtJ4XEgbEZxOm/+T1rTHiUNijJTijLq6OjlkJ+yb0diDkFU+Fc8/c+oUN8JKnuyKbOfl2PgqYhK51gp/xOY1fxxyjSdOnJBrC/kLRTdvrT68X+jkElGY6g9IzsRzPAHhXjC6SMOUfY6yBwig5hnBhWhwJFar+QOOYdERZBBCdyRGwPXa1NfXWzs6OsqJGeydnZ1rIPwQmt7BJ4yP+vv75bOeplGRG8wzwGFmIr+3t3fDwED/UkVR5aOo9Hn+9u3bHXpyxqVMLsg51TxNukiY+mg8ITL9HKnkK9chBjqMZo8RJS7lAscWr4+UZ9SmNUF8rhBNJpxFObZx//G9/v6BzSaTMszFzI/R7sstLS1MUub+8qFxSvoWM0HLW0gXojXd1NRk8Xicqyg/jWl45WM/3mY2oOOiwKRktQZ6pMUUOBw0cCB+DbJy9duMdjdz1SB/yBrTMy6jg5gsMm3RBeQbIQfbpsHB4ScgX4rt7uUm6UWOYRf5s4quhxjTKDLRWLSKafxAzIPT+S8YxHa0O4BJnILsavnHQTpydBeL/PmPP0AtADjiVsioIEib8c0r2FAeIu/AMwQ/N3Mq34YbawFHmwWjkEnbWeXyBc0Eb4PknJZKEmLSD+2e5cvtukz+/UdP0yY0UonbehDBY7X5cA1CWG212x3Hsd3rSVU1hgb/BTUli5UqOsLqAAAAAElFTkSuQmCC" alt=""></div><div class="nm">60 m tanques</div><span class="pc">P79</span><span class="mk">11.02</span><span class="dt">09/05</span></div>
+            <div class="dmr"><div class="ic"><img src="data:image/png;base64,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" alt=""></div><div class="nm">Pes</div><span class="pc am">P73</span><span class="mk">6,94</span><span class="dt">07/02</span></div>
+            <div class="dmr"><div class="ic"><img src="data:image/png;base64,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" alt=""></div><div class="nm">60 m</div><span class="pc am">P72</span><span class="mk">9.51</span><span class="dt">14/02</span></div>
+          </div>
+          <div class="dcard">
+            <div class="dl">Convocatòries</div>
+            <div class="dconv"><div class="t">Control Federatiu · Pista Coberta</div><div class="m">Ds. 25 jul · 09:30 · Sabadell (Pista Municipal)</div><div class="tags"><span class="ch2 am">Confirmació pendent</span><span class="ch2">60 m · Longitud</span></div></div>
+            <div class="dconv"><div class="t">Lliga Catalana Sub-12 · 3a jornada</div><div class="m">Dg. 26 jul · 10:00 · Barcelona (Serrahima)</div><div class="tags"><span class="ch2 gn">✓ Assistència confirmada</span><span class="ch2">Plaça de cotxe reservada</span></div></div>
+            <div class="dconv"><div class="t">Cros Escolar Comarcal</div><div class="m">Finalitzada · 06 jul · Vilanova i la Geltrú</div><div class="tags"><span class="ch2">Resultat: 4a posició</span></div></div>
+          </div>
+          <div class="dcard">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;"><span style="font-weight:800;font-size:14px;">Juliol 2026</span><span style="color:#c4c4bd;font-size:13px;">‹ ›</span></div>
+            <div class="dcal">
+              <div class="hd">L</div><div class="hd">M</div><div class="hd">X</div><div class="hd">J</div><div class="hd">V</div><div class="hd">S</div><div class="hd">D</div>
+              <div class="dy empty"></div><div class="dy empty"></div><div class="dy">1</div><div class="dy">2<span class="cd" style="background:#4a7fd6;"></span></div><div class="dy">3</div><div class="dy">4</div><div class="dy">5</div>
+              <div class="dy">6</div><div class="dy">7<span class="cd" style="background:#4a7fd6;"></span></div><div class="dy">8</div><div class="dy">9<span class="cd" style="background:#4a7fd6;"></span></div><div class="dy">10</div><div class="dy">11</div><div class="dy">12</div>
+              <div class="dy">13</div><div class="dy">14<span class="cd" style="background:#4a7fd6;"></span></div><div class="dy">15</div><div class="dy">16<span class="cd" style="background:#4a7fd6;"></span></div><div class="dy">17</div><div class="dy">18</div><div class="dy">19</div>
+              <div class="dy today">20<span class="cd" style="background:#4a7fd6;"></span></div><div class="dy">21<span class="cd" style="background:#4a7fd6;"></span></div><div class="dy">22</div><div class="dy">23<span class="cd" style="background:#4a7fd6;"></span></div><div class="dy">24</div><div class="dy">25<span class="cd" style="background:#d64d4d;"></span></div><div class="dy">26<span class="cd" style="background:#d64d4d;"></span></div>
+              <div class="dy">27</div><div class="dy">28</div><div class="dy">29</div><div class="dy">30</div><div class="dy">31</div><div class="dy empty"></div><div class="dy empty"></div>
+            </div>
+          </div>
+        </div>
+        <div class="dcol">
+          <div class="dcard">
+            <div class="dl">Pagaments</div>
+            <div class="dpay"><div><div class="pt">Quota trimestral · 90 €</div><div class="pm">Pròxim càrrec: 01 oct 2026 · Visa ···· 4417</div></div><span class="ch2 gn">Domiciliat</span></div>
+            <div class="dlink">Veure historial de pagaments ›</div>
+          </div>
+          <div class="dcard">
+            <div class="dl" style="display:flex;justify-content:space-between;">Primers passos <span style="color:#3C7A2E;">3 de 3 ✓</span></div>
+            <div class="dstep"><div class="chk">✓</div><div><div class="t">Inscriure l'atleta</div><div class="m">Èric inscrit a la temporada</div></div></div>
+            <div class="dstep"><div class="chk">✓</div><div><div class="t">Configurar mètode de pagament</div><div class="m">Visa ···· 4417 domiciliada</div></div></div>
+            <div class="dstep"><div class="chk">✓</div><div><div class="t">Instal·lar l'app</div><div class="m">Notificacions de convocatòries actives</div></div></div>
+          </div>
+          <div class="dcard">
+            <div class="dl">Activitat recent</div>
+            <div class="dact"><span class="adot" style="background:#89CD24;"></span><div class="tx"><b>Nova millor marca</b> · Longitud 4,13 m a Sabadell <span class="ch2 gn" style="font-size:8.5px;padding:1px 6px;">P93</span></div><span class="ad">26/06</span></div>
+            <div class="dact"><span class="adot" style="background:#4a7fd6;"></span><div class="tx"><b>Convocatòria confirmada</b> · Lliga Catalana Sub-12 (3a jornada)</div><span class="ad">18/07</span></div>
+            <div class="dact"><span class="adot" style="background:#4a7fd6;"></span><div class="tx"><b>Plaça de cotxe reservada</b> · vehicle de Jordi Serra</div><span class="ad">19/07</span></div>
+            <div class="dact"><span class="adot" style="background:#b0b0a8;"></span><div class="tx"><b>Pagament processat</b> · Quota trimestral 90 €</div><span class="ad">01/07</span></div>
+            <div class="dact"><span class="adot" style="background:#d64d4d;"></span><div class="tx"><b>Falta justificada</b> · entreno 09/07 (malaltia)</div><span class="ad">09/07</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">
+    <div class="note"><div class="nk">El teu atleta i les seves marques</div><p>Perfil, categoria, grup i les <strong>millors marques</strong> amb percentil, d'un cop d'ull.</p></div>
+    <div class="note"><div class="nk">Convocatòries i calendari</div><p>Les properes competicions i tot el que passa al club, ordenat per dates.</p></div>
+    <div class="note"><div class="nk">Pagaments a la vista</div><p>Estat de la quota, <strong>pròxim càrrec</strong> i mètode de pagament domiciliat.</p></div>
+    <div class="note"><div class="nk">Activitat recent</div><p>Marques, convocatòries, places de cotxe i pagaments reunits en <strong>un únic fil</strong>.</p></div>
+  </div>
+
+  <!-- ===== Fitxa de l'atleta + evolució ===== -->
+  <div class="capsec"><span class="ck">Athria · Fitxa de l'atleta</span><h3>Seguiment i evolució de l'atleta</h3><p class="d">Cada família consulta l'assistència, les millors marques per prova, la progressió i la comparativa amb la resta de Catalunya, amb el context del nivell real de l'atleta.</p></div>
+  <div class="awrap">
+    <div class="wtop"><i></i><i></i><i></i><span class="u"><b>athria.app</b>/atletes/eric-bonet</span></div>
+    <div class="awk">
+      <div class="ahead"><div class="av">EB</div><div><div class="an">Èric Bonet Prat</div><div class="am">11 anys (2015) · Sub 12 · 2025-26</div><span class="st">● Actiu</span> <span style="font-size:10.5px;color:#9A9A96;">· Alta 03/09/2025</span></div></div>
+      <div class="stat4">
+        <div class="c"><div class="l">Assistència</div><div class="n">94%</div><div class="s">17 de 18</div></div>
+        <div class="c"><div class="l">Proves</div><div class="n">15</div><div class="s">amb marques</div></div>
+        <div class="c"><div class="l">MMP's</div><div class="n">8</div><div class="s">aquesta temporada</div></div>
+        <div class="c"><div class="l">Competicions</div><div class="n">24</div><div class="s">aquesta temporada</div></div>
+      </div>
+      <div class="tabs"><span class="on">Millors marques</span><span>Feedback</span><span>Marques</span><span>Pagaments</span><span>Dades</span><span>Inscripcions</span></div>
+      <div class="lbl">Millors marques per prova</div>
+      <div class="provas">
+        <div class="p"><div class="pl">Jabalina 300g</div><div class="pv">17,60</div><div class="pd">02/05</div></div>
+        <div class="p on"><div class="pl">Longitud</div><div class="pv">4,05</div><div class="pd">26/06</div></div>
+        <div class="p"><div class="pl">Pes 2kg</div><div class="pv">6,94</div><div class="pd">07/02</div></div>
+        <div class="p"><div class="pl">Triatló</div><div class="pv">612</div><div class="pd">07/02</div></div>
+        <div class="p"><div class="pl">120m</div><div class="pv">18.55</div><div class="pd">25/10</div></div>
+        <div class="p"><div class="pl">200m</div><div class="pv">33.10</div><div class="pd">01/02</div></div>
+        <div class="p"><div class="pl">4×60m</div><div class="pv">35.82</div><div class="pd">24/04</div></div>
+        <div class="p"><div class="pl">60m</div><div class="pv">9.51</div><div class="pd">14/02</div></div>
+        <div class="p"><div class="pl">60mv</div><div class="pv">11.02</div><div class="pd">09/05</div></div>
+      </div>
+      <div class="mret">
+        <div><div class="l">Millor</div><div class="n">4,05</div><div class="s">26/06/2026</div></div>
+        <div><div class="l">Última</div><div class="n">4,05</div><div class="s">26/06/2026</div></div>
+        <div><div class="l">Progressió</div><div class="n gn">+15,8%</div><div class="s">10 registres</div></div>
+        <div><div class="l">Percentil Catalunya</div><div class="n">P90 <span class="pill">TOP 10%</span></div><div class="s">de 372 atletes Sub-12 M</div></div>
+      </div>
+      <div class="chart">
+        <div class="chh"><div class="lbl" style="margin:0;">Evolució · Longitud</div><div class="seg"><span>Només atleta</span><span class="on">vs Catalunya</span></div></div>
+        <svg viewBox="0 0 620 212" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Evolució de longitud amb percentil respecte de Catalunya">
+          <line x1="30" y1="46" x2="600" y2="46" stroke="#3C7A2E" stroke-width="1.5" stroke-dasharray="5 5" opacity=".6"/>
+          <text x="30" y="40" font-family="Oswald,sans-serif" font-size="10" fill="#3C7A2E" font-weight="600">MILLOR (MMP)</text>
+          <polyline fill="none" stroke="#0A0A0A" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="30,98.8 93.3,94 156.7,103.6 220,116.4 283.3,114.8 346.7,111.6 410,122.8 473.3,62 536.7,97.2 600,46"/>
+          <g fill="#0A0A0A"><circle cx="30" cy="98.8" r="3.4"/><circle cx="93.3" cy="94" r="3.4"/><circle cx="156.7" cy="103.6" r="3.4"/><circle cx="220" cy="116.4" r="3.4"/><circle cx="283.3" cy="114.8" r="3.4"/><circle cx="346.7" cy="111.6" r="3.4"/><circle cx="410" cy="122.8" r="3.4"/><circle cx="473.3" cy="62" r="3.4"/><circle cx="536.7" cy="97.2" r="3.4"/></g>
+          <circle cx="600" cy="46" r="6" fill="#3C7A2E"/>
+          <g font-family="Manrope,sans-serif" font-size="9" fill="#9A9A96" text-anchor="middle">
+            <text x="30" y="90">P57</text><text x="93.3" y="85">P60</text><text x="156.7" y="95">P54</text><text x="220" y="108">P46</text><text x="283.3" y="106">P47</text><text x="346.7" y="103">P49</text><text x="410" y="114">P42</text><text x="473.3" y="53">P80</text><text x="536.7" y="89">P58</text>
+          </g>
+          <text x="600" y="34" text-anchor="end" font-family="Manrope,sans-serif" font-size="11" font-weight="800" fill="#3C7A2E">P90 · Millor</text>
+          <g font-family="Oswald,sans-serif" font-size="9" fill="#b3b3ad" text-anchor="middle">
+            <text x="30" y="206">15/11</text><text x="156.7" y="206">20/12</text><text x="283.3" y="206">07/02</text><text x="410" y="206">18/04</text><text x="473.3" y="206">26/04</text><text x="600" y="206">26/06</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="notes c3">
+    <div class="note"><div class="nk">Resum de temporada</div><p>Assistència, proves amb marca, MMP's i competicions, d'un cop d'ull.</p></div>
+    <div class="note"><div class="nk">Millors marques per prova</div><p>Cada prova amb la seva <strong>millor marca</strong>, la progressió i la data.</p></div>
+    <div class="note"><div class="nk">Evolució i percentil</div><p>Progressió de cada marca i comparativa <strong>vs. Catalunya</strong> (P90 · Top 10%).</p></div>
+  </div>
+
+    <!-- ===== Feedback de l'entrenador ===== -->
+  <div class="capsec"><span class="ck">Athria · Feedback de l'entrenador</span><h3>El retorn de l'entrenador, a casa</h3><p class="d">De forma periòdica, l'equip tècnic comparteix a Athria una <strong>retroalimentació estructurada</strong> de cada atleta. No és una nota ni una qualificació: és una fotografia honesta del seu <strong>compromís</strong>, la seva actitud i la seva <strong>progressió esportiva</strong>, pensada perquè pugueu acompanyar-lo millor des de casa.</p></div>
+  <div class="awrap">
+    <div class="wtop"><i></i><i></i><i></i><span class="u"><b>athria.app</b>/atletes/eric-bonet/feedback</span></div>
+    <div class="awk">
+      <div class="ahead"><div class="av">EB</div><div><div class="an">Èric Bonet Prat</div><div class="am">Sub-12 · Grup Dimarts i Dijous</div></div><span class="fbadge">Juliol 2026</span></div>
+      <div class="fbsl" style="margin-top:16px;">Compromís i entrenament</div>
+      <div class="fbgrid">
+      <div class="fbq"><div class="q">Participa en les activitats i exercicis que proposen els entrenadors/es</div><div class="fbopts"><span class="fbopt">Molt</span><span class="fbopt on avg">A vegades</span><span class="fbopt">Poc</span></div></div>
+      <div class="fbq"><div class="q">S'esforça i dóna el millor, encara que la sessió sigui exigent</div><div class="fbopts"><span class="fbopt on molt">Molt</span><span class="fbopt">A vegades</span><span class="fbopt">Poc</span></div></div>
+      <div class="fbq"><div class="q">Aplica les correccions tècniques que se li indiquen</div><div class="fbopts"><span class="fbopt on molt">Molt</span><span class="fbopt">A vegades</span><span class="fbopt">Poc</span></div></div>
+      <div class="fbq"><div class="q">Manté la concentració durant tota la sessió</div><div class="fbopts"><span class="fbopt">Molt</span><span class="fbopt on avg">A vegades</span><span class="fbopt">Poc</span></div></div>
+
+      </div>
+      <div class="fbsl">Actitud, grup i esportivitat</div>
+      <div class="fbgrid">
+      <div class="fbq"><div class="q">Mostra una actitud positiva i amb ganes de millorar</div><div class="fbopts"><span class="fbopt">Molt</span><span class="fbopt on avg">A vegades</span><span class="fbopt">Poc</span></div></div>
+      <div class="fbq"><div class="q">Segueix les indicacions i les normes del grup</div><div class="fbopts"><span class="fbopt on molt">Molt</span><span class="fbopt">A vegades</span><span class="fbopt">Poc</span></div></div>
+      <div class="fbq"><div class="q">S'integra, coopera i ajuda al grup</div><div class="fbopts"><span class="fbopt on molt">Molt</span><span class="fbopt">A vegades</span><span class="fbopt">Poc</span></div></div>
+      <div class="fbq"><div class="q">Entrena i competeix amb esportivitat (gestiona guanyar i perdre)</div><div class="fbopts"><span class="fbopt on molt">Molt</span><span class="fbopt">A vegades</span><span class="fbopt">Poc</span></div></div>
+
+      </div>
+      <div class="fblg"><div class="li"><span class="dot" style="background:#89CD24;"></span>Molt</div><div class="li"><span class="dot" style="background:#E0A82E;"></span>A vegades</div><div class="li"><span class="dot" style="background:#b0b0a8;"></span>Poc</div><span style="color:var(--grey-2);">· freqüència observada, sense connotació de nota</span></div>
+
+      <div class="fbsl" style="margin-top:20px;">Comentari del mes</div>
+      <div class="fbcomm">
+        <div class="ci"><div class="ck2"><span class="cd" style="background:#89CD24;"></span>El que va millor</div><p>Èric té una actitud excel·lent amb els companys i molt bon fons físic. Quan una activitat l'enganxa, s'implica moltíssim i arrossega el grup.</p></div>
+        <div class="ci"><div class="ck2"><span class="cd" style="background:#E0A82E;"></span>En què estem treballant</div><p>Li costa enganxar-se a algunes propostes noves i de vegades prefereix mirar abans de provar. L'acompanyem perquè participi sense por a equivocar-se; no és desinterès, és prudència.</p></div>
+        <div class="ci"><div class="ck2"><span class="cd" style="background:#4a7fd6;"></span>Com podeu acompanyar des de casa</div><p>Sense pressió, pregunteu-li quina activitat li ha agradat més de la setmana i reforceu que equivocar-se forma part d'aprendre. Ens ajuda molt que arribi amb ganes de provar.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">
+    <div class="note"><div class="nk">Compromís i entrenament</div><p>Com participa, com s'esforça, com aplica les correccions tècniques i com manté la concentració.</p></div>
+    <div class="note"><div class="nk">Actitud, grup i esportivitat</div><p>Actitud, respecte per les normes, integració amb el grup i com gestiona guanyar i perdre.</p></div>
+    <div class="note"><div class="nk">Una escala sense nota</div><p><strong>Molt · A vegades · Poc</strong>: indiquen freqüència observada, mai una qualificació ni un judici de valor.</p></div>
+    <div class="note"><div class="nk">Comentari del mes</div><p>El que va millor, allò que treballem i <strong>com podeu acompanyar des de casa</strong>, en paraules de l'entrenador.</p></div>
+  </div>
+  <div class="callout light">
+    <div class="ct">Per què ho fem</div>
+    <p>Volem que sapigueu <strong>com creix el vostre fill o filla més enllà de les marques</strong>: l'esforç, l'actitud i la manera de ser dins del grup també formen part del seu desenvolupament esportiu.</p>
+  </div>
+
+  <!-- ===== Convocatòries (llistat) ===== -->
+  <div class="capsec"><span class="ck">Athria · Convocatòries</span><h3>Competicions clares i ordenades</h3><p class="d">El club convoca l'atleta i la família ho gestiona tot des d'un mateix lloc: consulta les proves, confirma l'assistència, organitza el desplaçament i consulta els resultats.</p></div>
+  <div class="awrap">
+    <div class="wtop"><i></i><i></i><i></i><span class="u"><b>athria.app</b>/convocatories</span></div>
+    <div class="awk">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;"><span class="ch2 gy" style="background:#0A0A0A;color:#fff;">Totes</span><span class="ch2 am">Pendents · 1</span><span class="ch2 gy">Confirmades</span><span class="ch2 gy">Finalitzades</span></div>
+      <div class="cvrow">
+        <div class="date"><div class="dd">25</div><div class="dm">Jul</div></div>
+        <div class="cc"><div class="tags"><span class="ch2 am">Prèvia</span><span class="ch2 gy">Pista Coberta</span></div><div class="ct">Control Federatiu Territorial</div><div class="cm">Sabadell · Pista Municipal · 09:30 · 60m · Longitud</div></div>
+        <div class="rt"><div class="status pend">● Confirmació pendent</div><div class="cm" style="margin:2px 0 0;">Límit: avui 22:00</div><a class="btnk">Respondre</a></div>
+      </div>
+      <div class="cvrow">
+        <div class="date"><div class="dd">26</div><div class="dm">Jul</div></div>
+        <div class="cc"><div class="tags"><span class="ch2 gn">Final</span><span class="ch2 bl">Aire Lliure</span></div><div class="ct">Lliga Catalana Sub-12 · 3a jornada</div><div class="cm">Barcelona · Serrahima · 10:00 · 60m · Pes · 4×60m</div></div>
+        <div class="rt"><div class="status ok">● Assistència confirmada</div><div class="cm" style="margin:2px 0 0;">Cotxe de Jordi Serra</div><a class="btnk ghost">Veure transport</a></div>
+      </div>
+      <div class="cvrow">
+        <div class="date"><div class="dd">14</div><div class="dm">Jun</div></div>
+        <div class="cc"><div class="tags"><span class="ch2 bl">Control</span></div><div class="ct">Jornada de Control · Pista</div><div class="cm">Granollers · 09:00 · 200m · Jabalina</div></div>
+        <div class="rt"><div class="status fin">● Finalitzada</div><div class="cm" style="margin:2px 0 0;">2 marques registrades</div><a class="btnk ghost">Veure marques</a></div>
+      </div>
+      <div class="cvrow" style="margin-bottom:0;">
+        <div class="date"><div class="dd">06</div><div class="dm">Jul</div></div>
+        <div class="cc"><div class="tags"><span class="ch2 gy">Cros</span></div><div class="ct">Cros Escolar Comarcal</div><div class="cm">Vilanova i la Geltrú · 11:00 · 1.000m</div></div>
+        <div class="rt"><div class="status fin">● Finalitzada</div><div class="cm" style="margin:2px 0 0;">Resultat: 4a posició</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Convocatòria (detall) ===== -->
+  <div class="capsec"><span class="ck">Athria · Detall de convocatòria</span><h3>Tot el que cal saber, en un lloc</h3><p class="d">En obrir una convocatòria, la família confirma l'assistència, veu les proves assignades i tots els detalls logístics, amb la nota de l'entrenador.</p></div>
+  <div class="awrap">
+    <div class="wtop"><i></i><i></i><i></i><span class="u"><b>athria.app</b>/convocatories/control-federatiu</span></div>
+    <div class="awk">
+      <p class="lbl" style="margin-bottom:6px;">‹ Convocatòries</p>
+      <div class="an" style="font-weight:800;font-size:22px;">Control Federatiu Territorial</div>
+      <div class="am" style="color:#9A9A96;font-size:12.5px;margin:4px 0 14px;">Dissabte 25 de juliol · 09:30 · Sabadell (Pista Municipal Josep Molins)</div>
+      <div class="twocol">
+        <div>
+          <div class="warn"><div class="wt">⧗ Falta confirmar l'assistència d'Èric</div><div class="wm">El club necessita la teva resposta abans d'avui a les 22:00 per tancar l'acta.</div></div>
+          <div class="qbox2">
+            <div style="font-weight:800;font-size:14px;">Assistirà Èric a aquesta competició?</div>
+            <p style="margin:5px 0 0;font-size:12px;color:#9A9A96;">La teva confirmació tanca la seva inscripció en les proves assignades i avisa l'entrenador.</p>
+            <div class="confirm"><span class="b" style="background:#EAF4D6;border-color:#cfe3a8;color:#3C7A2E;">✓ Sí, assistirà</span><span class="b">✗ No podrà assistir</span></div>
+            <div class="lbl" style="margin-top:10px;">Proves assignades</div>
+            <div class="prow"><div class="pn">60 m llisos</div><div class="pm">MMP 9.51 · 14/02</div></div>
+            <div class="prow"><div class="pn">Longitud</div><div class="pm">MMP 4,05 · 26/06</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="qbox2">
+            <div class="lbl" style="margin-top:0;">Detalls</div>
+            <div class="drow"><span class="k">Tipus</span><span class="v">Control · Prèvia</span></div>
+            <div class="drow"><span class="k">Modalitat</span><span class="v">Pista Coberta</span></div>
+            <div class="drow"><span class="k">Categoria</span><span class="v">Sub-12 Masculí</span></div>
+            <div class="drow"><span class="k">Cambra de crides</span><span class="v">08:45</span></div>
+            <div class="drow"><span class="k">Recollida dorsals</span><span class="v">Carpa club</span></div>
+            <div class="drow"><span class="k">Convocats del club</span><span class="v">14 atletes</span></div>
+          </div>
+          <div class="note2"><div class="nt">💬 Nota de l'entrenador</div><p>«Arribar amb temps per a l'escalfament conjunt a les 09:00 al costat de la graderia nord.»</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Cotxe compartit ===== -->
+  <div class="capsec"><span class="ck">Athria · Cotxe compartit</span><h3>Transport coordinat entre famílies</h3><p class="d">Una manera senzilla d'organitzar els desplaçaments a les competicions: qui ofereix cotxe, quantes places queden lliures i qui necessita transport. El club només coordina; els acords són entre famílies.</p></div>
+  <div class="athsec rev">
+    <div class="phone"><div class="scr"><div class="nub"></div>
+      <div class="amk">
+        <div class="abr"><span class="dot"></span><span class="nm">Athria</span><span class="v">· cotxe compartit</span></div>
+        <div class="sec" style="margin-top:13px;">Cotxes</div>
+        <p class="d" style="margin-top:-2px;">Lliga Catalana Sub-12 · Dg. 26 jul · Barcelona (Serrahima)</p>
+        <div class="status">
+          <div class="sp"><div class="n">3</div><div class="l">Cotxes</div></div>
+          <div class="sp"><div class="n">5</div><div class="l">Places lliures</div></div>
+          <div class="sp"><div class="n">2</div><div class="l">Sense transport</div></div>
+        </div>
+        <div class="sec">Cotxes disponibles</div>
+        <div class="cw" style="margin-bottom:10px;">
+          <div class="arow"><div class="cav">JS</div><div style="flex:1;"><div class="cn3" style="font-weight:700;font-size:12.5px;">Jordi Serra</div><div class="cm3" style="color:#9A9A96;font-size:10px;">Pare de Bruna S. · condueix</div></div><span style="font-family:var(--f-meta);font-size:9px;letter-spacing:.06em;color:#4D7515;font-weight:600;text-align:right;">1 LLIURE</span></div>
+          <p class="d" style="margin:8px 0 0;font-size:10.5px;">Sortida <strong style="color:#0A0A0A;">08:15</strong> · Pavelló · Tornada ~14:30</p>
+          <div class="occ"><b>B</b><b class="on">E</b><b>P</b><b class="em">+</b></div>
+          <div class="conf">✓ La teva plaça reservada</div>
+        </div>
+        <div class="cw">
+          <div class="arow"><div class="cav" style="background:#EAEAE4;color:#6a6a6a;">MR</div><div style="flex:1;"><div class="cn3" style="font-weight:700;font-size:12.5px;">Marta Ribó</div><div class="cm3" style="color:#9A9A96;font-size:10px;">Mare d'Aïna R. · condueix</div></div><span style="font-family:var(--f-meta);font-size:9px;letter-spacing:.06em;color:#4D7515;font-weight:600;text-align:right;">2 LLIURES</span></div>
+          <p class="d" style="margin:8px 0 0;font-size:10.5px;">Sortida <strong style="color:#0A0A0A;">08:30</strong> · Estació RENFE · Tornada oberta</p>
+          <div class="occ"><b>A</b><b>M</b><b class="em">+</b><b class="em">+</b></div>
+          <div style="text-align:center;background:#89CD24;color:#0A0A0A;font-weight:800;font-size:11px;padding:9px;border-radius:11px;margin-top:8px;">Reservar plaça</div>
+        </div>
+        <div class="nav"><span class="ni">Inici</span><span class="ni on">Convocatòries</span><span class="ni">Calendari</span><span class="ni">Perfil</span></div>
+      </div>
+    </div></div>
+    <div class="stack">
+      <div class="note"><div class="nk">Estat del transport</div><p>Cotxes oferts, <strong>places lliures</strong> i atletes encara sense desplaçament.</p></div>
+      <div class="note"><div class="nk">Reservar o oferir</div><p>La família reserva plaça en un altre cotxe o <strong>ofereix el seu</strong> en un pas.</p></div>
+      <div class="note"><div class="nk">Punt i hora</div><p>Cada cotxe indica sortida, tornada i ocupants per organitzar-ho sense trucades.</p></div>
+      <div class="note"><div class="nk">El club coordina</div><p>La plataforma només facilita l'organització; <strong>els acords són entre famílies</strong>.</p></div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px;">Un model de comunicació més clar</h3>
+  <div class="chans">
+    <div class="chan p"><div class="cn">Athria</div><div class="role">Canal principal</div><p>Avisos, calendari, convocatòries, seguiment, retorn de l'entrenador, inscripcions i pagaments.</p></div>
+    <div class="chan s"><div class="cn">WhatsApp</div><div class="role">Situacions urgents</div><p>Per a situacions excepcionals, comunicacions directes o qüestions que no es puguin gestionar a la plataforma.</p></div>
+    <div class="chan t"><div class="cn">Contacte personal</div><div class="role">Quan cal parlar</div><p>La família podrà sol·licitar una reunió amb l'entrenador o amb la direcció tècnica quan la situació ho requereixi.</p></div>
+  </div>
+  <p class="meta" style="margin-top:12px;">El model complet de comunicació, els seus canals i els contactes de referència s'explicaran al kit de benvinguda. La informació de cada atleta serà privada i accessible únicament per a la seva família i els professionals autoritzats del club, d'acord amb la normativa de protecció de dades.</p>
+
+    <!-- ============ 06 · COM HO NOTAREU ============ -->
+  <h2 id="s06"><span class="n">06</span>Què hi guanya la teva família</h2>
+  <p>Tot això està pensat per <strong>ampliar les oportunitats de progressió</strong> de cada atleta, simplificar la relació amb el club i fer més visible el seu acompanyament esportiu.</p>
+  <div class="bens">
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+      <div><h3>Tota la informació en un únic lloc</h3><p>Sabreu on consultar cada avís, convocatòria, document o activitat.</p></div>
+    </div>
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
+      <div><h3>Més claredat sobre l'evolució</h3><p>Coneixereu millor què està treballant el vostre fill o filla i els seus pròxims objectius.</p></div>
+    </div>
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+      <div><h3>Competicions més fàcils de seguir</h3><p>Rebreu les convocatòries ordenades i podreu confirmar la participació des del mòbil.</p></div>
+    </div>
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+      <div><h3>Moments definits per parlar</h3><p>Tindreu espais estructurats per conèixer la feina de la categoria i compartir l'evolució.</p></div>
+    </div>
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M8 9h8M8 12h5"/></svg></div>
+      <div><h3>Menys missatges dispersos</h3><p>La comunicació principal quedarà centralitzada i serà més fàcil recuperar el que és important.</p></div>
+    </div>
+    <div class="ben">
+      <div class="bic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21 5 23.5 8.5 21.5 12.5 19 16.65 12 21 12 21z"/></svg></div>
+      <div><h3>Més acompanyament per a qui comença</h3><p>Les famílies noves comprendran abans com funciona el club i com es viu una competició.</p></div>
+    </div>
+  </div>
+  <div class="callout big light">
+    <div class="ct">El resultat</div>
+    <p>Menys dubtes. Més claredat. Més acompanyament.</p>
+  </div>
+
+  <!-- ============ 07 · NOVA IMATGE I EQUIPACIÓ ============ -->
+  <h2 id="s07"><span class="n">07</span>La imatge i l'equipació del club</h2>
+  <p>La identitat del club també es porta posada: l'<strong>equipació de Dinami-K</strong>, a la pista i al carrer.</p>
+  <div class="omt">
+    <div class="omt-glow"></div>
+    <div class="omt-glow b"></div>
+    <div class="omt-in">
+      <p class="omt-k">Estrena · Temporada 2026/27</p>
+      <h3 class="omt-h">Energia, moviment i pertinença</h3>
+      <p class="omt-lead">Estrenem una <strong>nova equipació</strong> —i tota una <strong>col·lecció de marxandatge</strong>— amb l'ADN Dinami-K: energia, moviment i sentit de pertinença. Perquè sentir-se part de l'equip també forma part del rendiment.</p>
+      <div class="omt-grid">
+        <figure class="kit-card"><div class="imgwrap"><img src="equip/samarreta.jpg" alt="Samarreta tècnica Dinami-K 2026/27"></div><figcaption><span class="s">Modalitat 01</span><span class="t">Samarreta tècnica</span></figcaption></figure>
+        <figure class="kit-card"><div class="imgwrap"><img src="equip/competicio.jpg" alt="Equip de competició Dinami-K 2026/27"></div><figcaption><span class="s">Modalitat 02</span><span class="t">Equip de competició</span></figcaption></figure>
+        <figure class="kit-card"><div class="imgwrap"><img src="equip/tirants.jpg" alt="Samarreta de tirants Dinami-K 2026/27"></div><figcaption><span class="s">Modalitat 03</span><span class="t">Samarreta de tirants</span></figcaption></figure>
+      </div>
+      <p class="omt-hint">⤢ Toca una imatge per veure-la en gran</p>
+      <p class="omt-foot">Les tres modalitats més demanades, amb el disseny dinàmic del club. <strong>La col·lecció completa, molt aviat.</strong></p>
+      <span class="omt-badge">Nova temporada 2026/27</span>
+    </div>
+  </div>
+
+  <!-- ============ 08 · CURA INTEGRAL ============ -->
+  <h2 id="s08"><span class="n">08</span>I a més: tenim cura de l'atleta per complet</h2>
+  <p>El desenvolupament esportiu no depèn únicament de l'entrenament. Aquesta temporada ampliem la mirada per acompanyar també la <strong>salut, els hàbits i el benestar</strong> de l'atleta i del <strong>seu entorn familiar</strong>, perquè tenir cura de la família que envolta l'atleta forma part de tenir cura d'ell.</p>
+  <div class="fronts">
+    <div class="front">
+      <div class="fh"><div><div class="fk">Benestar</div><div class="fn">Dinami-K Talks</div></div><div class="fic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div></div>
+      <div class="fb"><p>Un cicle de <strong>xerrades sobre salut, hàbits, rendiment i psicologia esportiva</strong>, pensat tant per a atletes com per a famílies. Eines per comprendre i acompanyar millor el procés esportiu dins i fora de la pista.</p><span class="badge" style="margin-top:12px;">Pla pròximament</span></div>
+    </div>
+    <div class="front">
+      <div class="fh"><div><div class="fk">Salut</div><div class="fn">Medicina esportiva</div></div><div class="fic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21 5 23.5 8.5 21.5 12.5 19 16.65 12 21 12 21z"/></svg></div></div>
+      <div class="fb"><p>Treballem per oferir suport i <strong>serveis de medicina esportiva en condicions bonificades</strong> per als nostres atletes: prevenció, valoració, seguiment i cura amb el suport de professionals especialitzats.</p><span class="badge" style="margin-top:12px;">En preparació</span></div>
+    </div>
+  </div>
+
+  <!-- ===== TANCAMENT ===== -->
+  <div class="callout">
+    <div class="ct">T'hi esperem</div>
+    <p>A Dinami-K trobareu un club on cada atleta pot <strong>gaudir, aprendre, progressar i desenvolupar tot el seu potencial</strong>, en un entorn proper i cuidat. Si voleu que el vostre fill o filla en formi part, us hi esperem a la pista.</p>
+    <a class="cta" href="https://app.cluber.es/legacy/clubes/662fc525765de012579250/inscripcion" target="_blank" rel="noopener">Apunta-t'hi a Dinami-K <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+
+  <div class="signoff">
+    <p class="greet">Una abraçada esportiva,</p>
+    <p class="team">L'equip de Dinami-<span>K</span></p>
+    <p class="meta" style="margin-top:10px;">Per a qualsevol dubte, estem a la vostra disposició · Escola d'Atletisme Dinami-K</p>
+  </div>
+
+</main>
+
+<footer class="pagefoot">
+  Escola d'Atletisme Dinami-K · Temporada 2026/27
+</footer>
+
+
+<input type="checkbox" id="navtoggle" class="navtoggle" aria-label="Obre l'índex de seccions">
+<label for="navtoggle" class="navfab" title="Índex de seccions">
+  <svg class="bars" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  <svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</label>
+<nav class="navpanel" aria-label="Salta a una secció">
+  <div class="np-h">Salta a…</div>
+  <a href="#top"><span class="tn">↑</span>Inici</a>
+  <a href="#s01"><span class="tn">01</span>Què oferim</a>
+  <a href="#s02"><span class="tn">02</span>Els tres eixos</a>
+  <a href="#s03"><span class="tn">03</span>Més oportunitats esportives</a>
+  <a href="#s04"><span class="tn">04</span>Us acompanyem tot el curs</a>
+  <a href="#s05"><span class="tn">05</span>Athria: el club en un lloc</a>
+  <a href="#s06"><span class="tn">06</span>Què hi guanyeu</a>
+  <a href="#s07"><span class="tn">07</span>Imatge i equipació</a>
+  <a href="#s08"><span class="tn">08</span>Cura integral de l'atleta</a>
+</nav>
+<script>document.querySelectorAll(".navpanel a").forEach(function(a){a.addEventListener("click",function(){document.getElementById("navtoggle").checked=false;});});</script>
+<div class="lb" id="lightbox"><span class="lbx" aria-hidden="true">&times;</span><img id="lightbox-img" src="" alt="Equipació Dinami-K 2026/27 ampliada"></div>
+<script>(function(){var lb=document.getElementById("lightbox"),im=document.getElementById("lightbox-img");document.querySelectorAll(".kit-card img").forEach(function(g){g.addEventListener("click",function(){im.src=g.currentSrc||g.src;lb.classList.add("open");});});if(lb){lb.addEventListener("click",function(){lb.classList.remove("open");});}document.addEventListener("keydown",function(e){if(e.key==="Escape"&&lb)lb.classList.remove("open");});})();</script>
+</body>
+</html>
