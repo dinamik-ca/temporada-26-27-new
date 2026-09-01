@@ -51,6 +51,8 @@ Regles: tipografia fluida amb `clamp()`; columna de lectura `max-width:var(--wra
 - **Blocs esportius**: `.sblocks`/`.sblock`; `.chips`/`.chip` (+`.k` negre).
 - **Nota al peu**: `.footnote` (cursiva Manrope + filet verd) — per a text legal/aclariments (NO fer servir `.meta` per a paràgrafs llargs: és UPPERCASE i es llegeix malament).
 - **Canals / beneficis**: `.chans`/`.chan`; `.signoff` (comiat).
+- **Inici de temporada (hub)**: `.kickoff` (bloc negre amb filet verd) + `.ko-kick`/`.ko-h`/`.ko-days`/`.ko-day`/`.ko-note`/`.ko-cta` — dies d'inici + botó de matrícula a Cluber.
+- **Horari bàsic (horaris)**: `.basic` › `.bcard` (`.b1` verd = grup petit, `.b2` negre = grup gran) amb `.bk`/`.bt`/`.bdays` (píndoles Dl–Dv, `.on` = dia d'entrenament)/`.bhour`/`.bplus`/`.bpick`; `.basicnote` per al peu del bloc.
 - **Índex (TOC)**: `.toc` amb `.toc-list` de targetes clicables (badge de número + fletxa + hover). Pista: "Toca una secció…".
 - **Navegació flotant**: `.navfab` (botó ☰ fix, avall-dreta) + `.navpanel` (menú "Salta a…"). Toggle amb checkbox `#navtoggle` (hack CSS `:checked ~`) + un `<script>` mínim que tanca el panel en clicar. Cal `h2{scroll-margin-top:68px}` perquè l'àncora no quedi sota la capçalera fixa.
 

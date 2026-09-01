@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0A0A0A">
 <title>Horari d'entrenaments · Dinami-K · 2026/27</title>
-<meta name="description" content="Horari setmanal d'entrenaments de l'Escola d'Atletisme Dinami-K per a la temporada 2026/27: Escola, Tecnificació i Alt rendiment, dia a dia. Horari provisional.">
+<meta name="description" content="Horari setmanal d'entrenaments de l'Escola d'Atletisme Dinami-K per a la temporada 2026/27: Escola, Tecnificació i Alt rendiment, dia a dia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&family=Oswald:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -70,6 +70,29 @@
   .tile::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green);}
   .tile .num{font-family:var(--f-display);font-style:italic;font-weight:900;font-size:clamp(34px,9vw,42px);line-height:.9;color:var(--black);}
   .tile .lbl{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.08em;font-size:10.5px;color:var(--grey);margin-top:8px;line-height:1.35;}
+
+  /* ---------- Horari bàsic (resum ràpid) ---------- */
+  .basic{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0 6px;}
+  .bcard{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 20px 18px;overflow:hidden;}
+  .bcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--green);}
+  .bcard.b2::before{background:var(--black);}
+  .bcard .bk{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:600;color:var(--green-d);margin:0 0 6px;}
+  .bcard.b2 .bk{color:var(--grey);}
+  .bcard .bt{font-family:var(--f-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(17px,4.2vw,22px);line-height:1;color:var(--black);margin:0 0 14px;white-space:nowrap;}
+  .bdays{display:flex;gap:6px;margin:auto 0 12px;}
+  .bdays span{flex:1;text-align:center;font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:600;color:var(--grey-2);background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:7px 0;}
+  .bdays span.on{color:var(--black);background:var(--green);border-color:var(--green);}
+  .bcard.b2 .bdays span.on{background:var(--black);border-color:var(--black);color:#fff;}
+  .bhour{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+  .bhour .h{font-family:var(--f-display);font-style:italic;font-weight:900;font-size:clamp(24px,6vw,30px);line-height:1;color:var(--black);}
+  .bhour .u{font-family:var(--f-meta);text-transform:uppercase;letter-spacing:.13em;font-size:10px;color:var(--grey);}
+  .bplus{font-size:12.5px;line-height:1.4;color:var(--green-ink);background:var(--green-bg);border-radius:8px;padding:7px 10px;margin:10px 0 0;}
+  .bcard.b2 .bplus{color:var(--ink);background:var(--paper-2);}
+  .bpick{display:flex;align-items:center;gap:7px;margin:12px 0 0;padding-top:11px;border-top:1px dashed var(--line);font-size:13px;line-height:1.45;color:var(--grey);}
+  .bpick svg{flex:none;width:15px;height:15px;stroke:var(--green-d);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .bpick b{color:var(--black);font-weight:700;}
+  .basicnote{font-family:var(--f-body);font-size:14px;line-height:1.55;color:var(--grey);border-left:3px solid var(--green);padding-left:14px;margin:16px 0 0;font-style:italic;}
+  @media (max-width:680px){ .basic{grid-template-columns:1fr;gap:12px;} .bcard .bt{font-size:19px;} }
 
   /* ---------- Callouts ---------- */
   .callout{background:var(--green-bg);border-left:5px solid var(--green);border-radius:0 12px 12px 0;padding:18px 22px;margin:22px 0;}
@@ -222,17 +245,40 @@
     <div class="bar"></div>
     <h1>Horari d'entrenaments</h1>
     <p class="sub">Escola d'Atletisme Dinami-K · Temporada 2026/27 · Horari setmanal per grups i programes</p>
-    <span class="prov">Horari provisional</span>
   </section>
 
   <p class="lead">Aquest és l'horari setmanal d'entrenaments per a la temporada 2026/27, organitzat dia a dia i per tipus de sessió.</p>
 
-  <p>Cada sessió indica el <strong>tram horari</strong>, el <strong>programa</strong> (Escola, Tecnificació o Alt rendiment) i els <strong>grups o disciplines</strong> que hi treballen. Si teniu dubtes sobre quin grup us correspon, poseu-vos en contacte amb el club.</p>
+  <!-- ============ HORARI BÀSIC ============ -->
+  <h2 id="basic"><span class="n">1</span>L'horari, en 10 segons</h2>
 
-  <div class="callout amber">
-    <div class="ct">Important</div>
-    <p><strong>Horari provisional:</strong> els grups i els horaris poden variar segons les inscripcions i l'organització del club. Publicarem qualsevol canvi pels canals habituals.</p>
+  <p>La majoria d'atletes de l'escola només necessiten aquestes dues línies: el dia i l'hora del seu grup.</p>
+
+  <div class="basic" aria-label="Horari bàsic per grups">
+
+    <div class="bcard b1">
+      <p class="bk">Grup petit</p>
+      <p class="bt">Sub-6, Sub-8, Sub-10 i Sub-12</p>
+      <div class="bdays"><span>Dl</span><span class="on">Dt</span><span>Dc</span><span class="on">Dj</span><span>Dv</span></div>
+      <div class="bhour"><span class="h">17:30–18:45</span><span class="u">2 dies</span></div>
+      <p class="bplus">Mateix horari els dos dies</p>
+      <p class="bpick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Podeu triar <b>1 dia o els 2</b>, segons el cas.</span></p>
+    </div>
+
+    <div class="bcard b2">
+      <p class="bk">Grup gran</p>
+      <p class="bt">Sub-14, Sub-16, Sub-18 i Sub-20</p>
+      <div class="bdays"><span class="on">Dl</span><span>Dt</span><span class="on">Dc</span><span>Dj</span><span class="on">Dv</span></div>
+      <div class="bhour"><span class="h">17:30–19:00</span><span class="u">3 dies</span></div>
+      <p class="bplus">Mateix horari els tres dies</p>
+      <p class="bpick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Podeu triar <b>1, 2 o els 3 dies</b>, segons el cas.</span></p>
+    </div>
+
   </div>
+
+  <p class="basicnote">Amb això n'hi ha prou per al dia a dia. Si l'atleta fa <strong>Tecnificació</strong> o <strong>Alt rendiment</strong>, té sessions addicionals: les trobareu al detall de més avall.</p>
+
+  <p>Cada sessió indica el <strong>tram horari</strong>, el <strong>programa</strong> (Escola, Tecnificació o Alt rendiment) i els <strong>grups o disciplines</strong> que hi treballen. Si teniu dubtes sobre quin grup us correspon, poseu-vos en contacte amb el club.</p>
 
   <div class="stats">
     <div class="tile"><div class="num">5</div><div class="lbl">Dies d'entrenament, de dilluns a divendres</div></div>
@@ -442,8 +488,6 @@
       </div>
     </div>
   </div>
-
-  <p class="footnote"><strong>Nota:</strong> l'horari és provisional i pot ajustar-se segons les inscripcions i l'organització. La distribució definitiva de grups es confirmarà a l'inici de la temporada.</p>
 
   <p class="footnote"><strong>Grups mínims:</strong> les sessions de <strong>Tecnificació</strong> requereixen un nombre mínim de participants per poder obrir-se; si no s'assoleix, el grup es pot ajornar, agrupar o reorganitzar.</p>
 
