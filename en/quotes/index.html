@@ -588,6 +588,12 @@
     .pricesum .psh{flex-wrap:wrap;align-items:flex-start;}
   }
 
+  /* ---------- Inclòs a la quota (samarreta) ---------- */
+  .inclou{display:flex;align-items:center;gap:12px;background:var(--green-bg);border-left:4px solid var(--green);border-radius:0 12px 12px 0;padding:12px 16px;margin:16px 0 0;}
+  .inclou svg{width:26px;height:26px;fill:none;stroke:var(--green-d);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none;}
+  .inclou p{margin:0;font-size:13.5px;line-height:1.45;color:var(--green-ink);}
+  .inclou strong{color:var(--black);font-weight:700;}
+
   /* ---------- Lock-rate ribbon (matrícula = mantén els preus) ---------- */
   .lockrate{display:flex;align-items:center;gap:16px;margin:16px 0 26px;padding:18px 22px;background:var(--black);color:#fff;border-radius:16px;position:relative;overflow:hidden;box-shadow:0 14px 34px -22px rgba(10,10,10,.6);}
   .lockrate::after{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--green);}
@@ -726,6 +732,10 @@
           <div class="psrow"><span class="pl">Full programme</span><span class="pv">180&nbsp;€<small>/ term</small></span></div>
         </div>
       </div>
+    </div>
+    <div class="inclou">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3.5l3 1.8 3-1.8 5.2 2.9-2.2 3.7-2-.9V20.5H8V9.2l-2 .9L3.8 6.4z"/><path d="M9 3.5a3 3 0 006 0"/></svg>
+      <p>All fees include the athlete's <strong>training shirt</strong> for the season.</p>
     </div>
     <div class="psfoot">
       <span>All fees are <strong>termly</strong></span>
@@ -866,6 +876,7 @@
     <div class="ct">What you need to know</div>
     <div class="factlist">
       <span>All fees are <strong>termly</strong></span>
+      <span>All fees include the athlete's <strong>training shirt</strong></span>
       <span>+ <strong>€50 registration</strong> per year and athlete</span>
       <span>Licence and <strong>federation</strong> costs: billed separately and <strong>compulsory</strong> (they include the athlete's insurance)</span>
       <span><strong>15% discounts</strong> for single payment and for siblings still apply (not combinable)</span>
